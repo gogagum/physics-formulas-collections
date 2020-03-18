@@ -334,7 +334,11 @@ $\vec{S}=\frac{c}{4 \pi} [\vec{E} \times \vec{H}]$                         \\
 Уравнение Гельмольца ($\vec{E}(\vec{r}, t)=\vec{E}_{1}(\vec{r}) e^{-i \omega t}$):&
 $\frac{\partial^{2} \vec{E}}{\partial x^{2}}+\frac{\partial^{2} \vec{E}}{\partial y^{2}}+\frac{\partial^{2} \vec{E}}{\partial z^{2}}+\frac{\omega^{2}}{c^{2}} \vec{E}=0$&
 Теорема Пойнтинга (Интегральная форма):                                    &
-$\frac{d W}{d t}=-\oint_{\Pi(V)} \vec{S} d \vec{\Pi}-Q, Q=\int_{V} \mathrm{jE} d V$\\
+$\begin{aligned}
+\frac{d W}{d t}=                        \\
+-\oint_{\Pi(V)} \vec{S} d \vec{\Pi}-Q,  \\
+Q=\int_{V} \mathrm{jE} d V
+\end{aligned}$                                                             \\
 \hline
 H-волна:                                                                   &
 $E_{y}=E_{y}(x, z, t)=E_{0} \sin \left(\frac{\pi n}{a} x\right) \cdot \exp \left(i k_{z} z-i \omega t\right)$&
@@ -408,11 +412,6 @@ $\vec{H}=\frac{1}{c} [\vec{v} \times \vec{E}]$                             &
 Коэффициент отражения (ещё формула):                                       &
 $R=\frac{n_{1} E_{0}^{\prime 2} \cos \theta^{\prime}}{n_{1} E_{0}^{2} \cos \theta}=r^{2}$\\
 \hline
-Средняя мощность, излучаемая диполем с дипольным моментом $\vec{p}=\vec{p}_{0} \cos \omega t$ (законом Рэлея):&
-$\bar{Q}=\frac{p_{0}^{2}}{3 c^{3}} \omega^{4}$                             &
-Коэффициент прохождения (ещё формула):                                     &
-$D=\frac{n_{2} E_{0}^{\prime \prime} \cos \theta^{n}}{n_{1} E_{0}^{2} \cos \theta}=\frac{n_{2} \cos \theta^{\prime \prime}}{n_{1} \cos \theta} d^{2}$\\
-\hline
 \end{tabular}
 
 \newpage
@@ -420,6 +419,11 @@ $D=\frac{n_{2} E_{0}^{\prime \prime} \cos \theta^{n}}{n_{1} E_{0}^{2} \cos \thet
 \begin{tabular}{ |p{6cm}|p{3cm}|p{6cm}|p{3.5cm}|  }
 \hline
 \multicolumn{4}{|c|}{Электричество и магнетизм.} \\
+\hline
+Средняя мощность, излучаемая диполем с дипольным моментом $\vec{p}=\vec{p}_{0} \cos \omega t$ (законом Рэлея):&
+$\bar{Q}=\frac{p_{0}^{2}}{3 c^{3}} \omega^{4}$                             &
+Коэффициент прохождения (ещё формула):                                     &
+$D=\frac{n_{2} E_{0}^{\prime \prime} \cos \theta^{n}}{n_{1} E_{0}^{2} \cos \theta}=\frac{n_{2} \cos \theta^{\prime \prime}}{n_{1} \cos \theta} d^{2}$\\
 \hline
 Спектр волн в объёмном резонаторе (Минимальная частота - $\omega_{101}$, если $a > b$ и $\omega_{011}$, если $a < b$): &
 $\frac{\omega^{2}}{c^{2}}=\frac{\pi^{2} n^{2}}{a^{2}}+\frac{\pi^{2} m^{2}}{b^{2}}+\frac{\pi^{2} p^{2}}{h^{2}}$ &
@@ -465,7 +469,11 @@ $Q=2 \pi \frac{W}{\Delta W}$                                               &
                                                                            \\
 \hline
 Вынужденные колебания:                                                     &
-$L \ddot{q}+R \dot{q}+\frac{1}{C} q=\mathcal{E}(t), \quad \mathcal{E}(t)=\mathcal{E}_{0} \cos \omega t$&
+$\begin{aligned}
+L \ddot{q}+R \dot{q}+\frac{1}{C} q =                \\
+\mathcal{E}(t),                                     \\
+\quad \mathcal{E}(t)=\mathcal{E}_{0} \cos \omega t
+\end{aligned}$                                                             &
                                                                            &
                                                                            \\
 \hline
@@ -490,7 +498,7 @@ $Z_C = \frac{1}{i \omega C}$                                               &
                                                                            \\
 \hline
 Импеданс катушки индуктивности:                                            &
-$Z_L = i a L$                                                              &
+$Z_L = i \omega L$                                                         &
                                                                            &
                                                                            \\
 \hline
@@ -526,7 +534,11 @@ $f(t)=\sum_{k=-\infty}^{+\infty} C_{k} e^{i \omega_{k} t}$                 &
                                                                            \\
 \hline
 Коэффициент в ряде Фурье:                                                  &
-$C_{k}=\frac{1}{T} \int_{0}^{T} f(t) \cdot \exp{-i \omega_{k} t} d t, \omega_{k}=\frac{2 \pi k}{T}$&
+$\begin{aligned}
+C_{k}=\frac{1}{T} \int_{0}^{T} f(t) \cdot  \\
+ e^{-i \omega_{k} t} d t,                  \\
+\omega_{k}=\frac{2 \pi k}{T}
+\end{aligned}$                                                             &
                                                                            &
                                                                            \\
 \hline
