@@ -22,18 +22,18 @@ $C=\frac{\varepsilon l}{2 \ln (b / a)}=\frac{\varepsilon a l}{2 d}=\frac{\vareps
 \hline
 Поле диполя:                                                               &
 $\vec E = \frac{3(\vec p \cdot \vec r) \vec r- \vec p \cdot r^{2}}{r^{5}}$ &
-Взаимная энергия зарядов:                                                  &
-$U_{12}=\frac {q_{1} \cdot q_{2}}{r_{12}}$                                 \\
+Электрическая ёмкость конденсатора:                                        &
+$C=\frac {q}{\Delta \varphi}$                                              \\
 \hline
 Теорема Гаусса (Интегральная форма):                                       &
 $\oint_{S} {\vec E} d {\vec S} = 4 \pi q$                                  &
-Взаимная энергия произвольного числа зарядов:                              &
-$U=\frac{1}{2} \sum_{i} q_{i}\left(\sum_{k, k \neq i} \frac{q_{k}}{r_{i k}}\right)=\frac{1}{2} \sum_{i} q_{i} \varphi_{i}$ \\
+Электрическая ёмкость проводника:                                          &
+$C= \frac{q}{\varphi}$                                                     \\
 \hline
 Теорема Гаусса (Дифф. форма):                                              &
 $\operatorname{div} {\vec E} = 4 \pi \rho$                                 &
-Взаимная энергия произвольно распределенных зарядов:                       &
-$U=\frac{1}{2} \int_{V} \rho(\vec{r}) \varphi(\vec{r}) d V+\frac{1}{2} \int_{S} \sigma(\vec{r}) \varphi(\vec{r}) d S$ \\
+Электрическая ёмкость плоского конденсатора:                               &
+$C=\frac{q}{\Delta \varphi}=\frac{\varepsilon S}{4 \pi d}$                 \\
 \hline
 Разность потенциалов:                                                      &
 $\int_{(1)}^{(2)} {\vec E}({\vec r}) d {\vec r}=\varphi_{1}-\varphi_{2}$   &
@@ -149,7 +149,10 @@ q_{pol}=-\oint_{S} \vec{P} d \vec{S},                               \\
 $\vec{M}= [\vec{m} \times \vec{B}]$                                        \\
 \hline
 Граничные условия на границе раздела двух диэлектриков:                    &
-$D_{1 n}-D_{2 n}=4 \pi \sigma$ $E_{1 \tau}-E_{2 \tau}=0$                   &
+$\begin{aligned}
+(\vec{D_1}-\vec{D_2}) \vec{n} = 4 \pi \sigma,        \\
+(\vec{E_1}-\vec{E_2}) \vec{\tau}=0
+\end{aligned}$                                                             &
 Теорема о циркуляции магнитного поля в вакууме (Инт. форма):               &
 $\oint_{L(S)} \vec{B} d \vec{l}=\frac{4 \pi}{c} J$                         \\
 \hline
@@ -161,18 +164,18 @@ $\oint_{L(S)} \vec{B} d \vec{l}=\frac{4 \pi}{c} J$                         \\
 \hline
 \multicolumn{4}{|c|}{Электричество и магнетизм.} \\
 \hline
-Электрическая ёмкость проводника:                                          &
-$C= \frac{q}{\varphi}$                                                     &
+Взаимная энергия произвольного числа зарядов:                              &
+$U=\frac{1}{2} \sum_{i} q_{i}\left(\sum_{k, k \neq i} \frac{q_{k}}{r_{i k}}\right)=\frac{1}{2} \sum_{i} q_{i} \varphi_{i}$                            &
 Теорема о циркуляции магнитного поля в вакууме (Дифф. форма):              &
 $\operatorname{rot} \vec{B}=\frac{4 \pi}{c} \vec{j}$                       \\
 \hline
-Электрическая ёмкость конденсатора:                                        &
-$C=\frac {q}{\Delta \varphi}$                                              &
+Взаимная энергия зарядов:                                                  &
+$U_{12}=\frac {q_{1} \cdot q_{2}}{r_{12}}$                                 &
 Магнитное поле соленоида:                                                  &
 $B = \frac{4 \pi}{c} n J=\frac{4 \pi}{c} i$                                \\
 \hline
-Электрическая ёмкость плоского конденсатора:                               &
-$C=\frac{q}{\Delta \varphi}=\frac{\varepsilon S}{4 \pi d}$                 &
+Взаимная энергия произвольно распределенных зарядов:                       &
+$U=\frac{1}{2} \int_{V} \rho(\vec{r}) \varphi(\vec{r}) d V+\frac{1}{2} \int_{S} \sigma(\vec{r}) \varphi(\vec{r}) d S$                                      &
 Теорема Гаусса для магнитного поля (Инт. форма):                           &
 $\oint_{S} \vec{B} d \vec{S}=0$                                            \\
 \hline
@@ -266,7 +269,8 @@ $\mathcal{E}_{\mathrm{ind}}=-\frac{1}{c} \frac{d \Phi}{d t}$               &
 Граничные условия:                                                         &
 $\begin{aligned}
 D_{2 n}-D_{1 n} &=4 \pi \sigma, \\
-E_{2 t}=& E_{1 t}, B_{2 n}=& B_{1 n}, \\
+E_{2 t}=& E_{1 t}, \\
+B_{2 n}=& B_{1 n}, \\
 H_{2 \tau}-H_{1 \tau} &=\frac{4 \pi}{c} i_{N}
 \end{aligned}$                                                             \\
 \hline
@@ -277,16 +281,11 @@ $u(x, t)=a \cos [k(x-v t)]$                                                \\
 \hline
 Переход в СО, которая движется относительно старой со скоростью $\vec{v}$: &
 $\begin{aligned}
-\vec{E}^{\prime}=\vec{E}+\frac{1}{c} [\vec{v} \times \vec{B}] \\
+\vec{E}^{\prime}=\vec{E}+\frac{1}{c} [\vec{v} \times \vec{B}], \\
 \vec{B}^{\prime}=\vec{B}-\frac{1}{c} [\vec{v} \times \vec{E}]
 \end{aligned}$                                                             &
 Угловая частота:                                                           &
 $k v=\omega$                                                               \\
-\hline
-Индуктивность (самоиндукция):                                              &
-$\Phi=\frac{1}{c} L J$                                                     &
-Уравнение бегущей волны:                                                   &
-$u(x, t)=a \cos (k x-\omega t)$                                            \\
 \hline
 \end{tabular}
 
@@ -295,6 +294,11 @@ $u(x, t)=a \cos (k x-\omega t)$                                            \\
 \begin{tabular}{ |p{5cm}|p{4.5cm}|p{6cm}|p{3.5cm}|  }
 \hline
 \multicolumn{4}{|c|}{Электричество и магнетизм.} \\
+\hline
+Индуктивность (самоиндукция):                                              &
+$\Phi=\frac{1}{c} L J$                                                     &
+Уравнение бегущей волны:                                                   &
+$u(x, t)=a \cos (k x-\omega t)$                                            \\
 \hline
 Взаимная индукция ($\Phi_{12}$ - поток поля, создаваемого первым проводником, проходящее через второй): &
 $\Phi_{12}=\frac{1}{c} L_{12} J_{2}$                                       &
@@ -366,17 +370,28 @@ $E_{x}^{(1)}=E_{x}+E_{x}^{\prime}=E_{0}\left(e^{i\left(k z_{z}-\omega t\right)}-
 $=2 i E_{0} e^{-i \omega t} \sin k z$
 $B_{y}^{(1)}=B_{y}+B_{y}^{\prime}=B_{0}\left(e^{i\left(k_{z} z-\omega t\right)}+e^{i\left(k_{z}^{\prime} z-\omega t\right)}\right)=$
 $=2 B_{0} e^{-i \omega t} \cos k z$                                        &
-s-поляризованная волна (вектор $\vec{E}$ перпендикулярен плоскости падения):&
-$r_{\perp}=-\frac{\sin \left(\theta-\theta^{\prime \prime}\right)}{\sin \left(\theta+\theta^{\prime \prime}\right)}, d_{\perp}=\frac{2 \sin \theta^{\prime \prime} \cos \theta}{\sin \left(\theta+\theta^{\prime \prime}\right)}$\\
-\hline
-Отражение электромагнитной волны от плоской поверхности идеального проводника ($\vec{E}$, $\vec{B}$, $OZ$ перпендикулярна поверхности):&
+s-поляризованная волна (вектор $\vec{E}$ перпендикулярен плоскости
+ падения):                                                                 &
 $\begin{aligned}
-E_{0 x}=-E_{0 x}^{\prime}, \\
-B_{0 y}=E_{0 x}, \quad B_{0 y}^{\prime}=-E_{0 x}^{\prime}, \\
+r_{\perp}=-\frac{\sin \left(\theta-\theta^{\prime \prime}\right)}{\sin \left(\theta+\theta^{\prime \prime}\right)}, \\
+d_{\perp}=\frac{2 \sin \theta^{\prime \prime} \cos \theta}{\sin \left(\theta+\theta^{\prime \prime}\right)}
+\end{aligned}$                                                              \\
+\hline
+Отражение электромагнитной волны от плоской поверхности идеального
+ проводника ($\vec{E}$, $\vec{B}$, $OZ$ перпендикулярна поверхности):      &
+$\begin{aligned}
+E_{0 x}=-E_{0 x}^{\prime},                \\
+B_{0 y}=E_{0 x},                          \\
+\quad B_{0 y}^{\prime}=-E_{0 x}^{\prime}, \\
 B_{0 y}^{\prime}=B_{0 y}
 \end{aligned}$                                                             &
-p-поляризованная волна (вектор $\vec{E}$ перпендикулярен плоскости падения):&
-$r_{1}=-\frac{\operatorname{tg}\left(\theta-\theta^{\prime \prime}\right)}{\operatorname{tg}\left(\theta+\theta^{\prime \prime}\right)}, d_{\|}=\frac{4 \sin \theta^{\prime \prime} \cos \theta}{\sin 2 \theta+\sin 2 \theta^{\prime \prime}}$\\
+p-поляризованная волна (вектор $\vec{E}$ перпендикулярен плоскости
+ падения):                                                                 &
+$\begin{aligned}
+r_{1}=-\frac{\operatorname{tg}\left(\theta-\theta^{\prime \prime}\right)}{\operatorname{tg}\left(\theta+\theta^{\prime \prime}\right)},  \\
+d_{\|}=\frac{4 \sin \theta^{\prime \prime} \cos \theta}{\sin 2 \theta+\sin 2 \theta^{\prime \prime}}
+\end{aligned}$ 
+                                                                           \\
 \hline
 Соотношение между амплитудами полей в бегущей волне:                       &
 $\sqrt{\varepsilon} E=\pm \sqrt{\mu} H$                                    &
@@ -398,11 +413,6 @@ $\bar{Q}=\frac{p_{0}^{2}}{3 c^{3}} \omega^{4}$                             &
 Коэффициент прохождения (ещё формула):                                     &
 $D=\frac{n_{2} E_{0}^{\prime \prime} \cos \theta^{n}}{n_{1} E_{0}^{2} \cos \theta}=\frac{n_{2} \cos \theta^{\prime \prime}}{n_{1} \cos \theta} d^{2}$\\
 \hline
-Спектр волн в объёмном резонаторе (Минимальная частота - $\omega_{101}$, если $a > b$ и $\omega_{011}$, если $a < b$): &
-$\frac{\omega^{2}}{c^{2}}=\frac{\pi^{2} n^{2}}{a^{2}}+\frac{\pi^{2} m^{2}}{b^{2}}+\frac{\pi^{2} p^{2}}{h^{2}}$ &
-Угол Брюстера:                                                             &
-$\operatorname{tg} \theta_{\mathrm{E}}=n_{2} / n_{1}$                      \\
-\hline
 \end{tabular}
 
 \newpage
@@ -410,6 +420,11 @@ $\operatorname{tg} \theta_{\mathrm{E}}=n_{2} / n_{1}$                      \\
 \begin{tabular}{ |p{6cm}|p{3cm}|p{6cm}|p{3.5cm}|  }
 \hline
 \multicolumn{4}{|c|}{Электричество и магнетизм.} \\
+\hline
+Спектр волн в объёмном резонаторе (Минимальная частота - $\omega_{101}$, если $a > b$ и $\omega_{011}$, если $a < b$): &
+$\frac{\omega^{2}}{c^{2}}=\frac{\pi^{2} n^{2}}{a^{2}}+\frac{\pi^{2} m^{2}}{b^{2}}+\frac{\pi^{2} p^{2}}{h^{2}}$ &
+Угол Брюстера:                                                             &
+$\operatorname{tg} \theta_{\mathrm{E}}=\frac{n_2}{n_1}$                    \\
 \hline
 Соотношение между амплитудами тока и напр. в 2-полосной линии ($L_1 = \frac{d{L}}{d{x}}, C_1 = \frac{d{C}}{d{x}}$): &
 $V_{0}=\frac{1}{c} \sqrt{\frac{L_{1}}{C_{1}}} J_{0}$                       &
