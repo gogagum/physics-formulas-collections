@@ -6,27 +6,41 @@
 \usepackage{amssymb,amsmath}
 
 \begin{document}
-\begin{tabular}{ |p{4cm}|p{5.5cm}|p{6cm}|p{3.5cm}|  }
+\begin{tabular}{ |p{3.8cm}|p{5.7cm}|p{3.8cm}|p{5.7cm}|  }
 \hline
 \multicolumn{4}{|c|}{Аналитиеская механика.} \\
 \hline
 Положение материальной точки:                                                &  % [1, 1]
 $\vec{r} = x(t) \vec{i} + y(t) \vec{j} + z(t) \vec{k}$                       &  % [1, 2]
-                                                                             &  % [1, 3]
-                                                                             \\ % [1, 4]
+Углы Эйлера:                                                                 &  % [18, 1]
+Я не очень умею техатб.                                                      \\ % [1, 4]
 \hline
 Скорость материальной точки:                                                 &  % [2, 1]
 $\vec{v} = \frac{d{\vec{r}}}{dt} =
 \frac{dx}{dt} \vec{i} + \frac{dy}{dt} \vec{j} + \frac{dx}{dt} \vec{k}$       &  % [2, 2]
-                                                                             &  % [2, 3]
-                                                                             \\ % [2, 4]
+Ортогональные отображения:                                                   &  % [1, 3]
+$\begin{aligned}
+\vec{R} = 
+\left(\begin{array}{c}
+x \\
+y \\
+z \\
+\end{array} \right),     
+\vec{R^{'}} = 
+\left(\begin{array}{c}
+x^{'} \\
+y^{'} \\
+z^{'} \\
+\end{array} \right),         \\
+\vec{R^{'}} = A \vec{R}
+\end{aligned}$                                                               \\ % [1, 4]
 \hline
 Ускорение материальной точки:                                                &  % [3, 1]
 $\vec{w} = \frac{d{\vec{v}}}{dt} =
 \frac{d^2 x}{dt^2} \vec{i} +
-\frac{d^2 y}{dt^2} \vec{j} + \frac{d^2 x}{dt^2} \vec{k}$                     &  % [2, 2]
-                                                                             &  % [3, 3]
-                                                                             \\ % [3, 4]
+\frac{d^2 y}{dt^2} \vec{j} + \frac{d^2 x}{dt^2} \vec{k}$                     &  % [3, 2]
+Ортогональное преобразование для комплексного вектора:                       &  % [2, 3]
+$A (\vec{P} + i \vec{Q}) = A \vec{P} + i A \vec{Q}$                          \\ % [2, 4]
 \hline
 Вектор $\vec{\tau}$, определение:                                            &  % [4, 1]
 $\begin{aligned}
@@ -34,26 +48,42 @@ $\begin{aligned}
 \frac{d\vec{r}}{ds} \frac{ds}{dt} = \vec{\tau} \frac{ds}{dt},   \\
 \vec{\tau} = \frac{d\vec{r}}{ds}
 \end{aligned}$                                                               &  % [4, 2]
-                                                                             &  % [4, 3]
-                                                                             \\ % [4, 4]
+<<Хорошее>> определение нормы комплексного вектора:                          &  % [3, 3]
+$\vec{P} + i \vec{Q} = \sqrt{(\vec{P} + i \vec{Q})(\vec{P} + i \vec{Q})} = 
+\sqrt{\vec{P^T}\vec{P} + \vec{Q^T}\vec{Q}}$                                  \\ % [3, 4]
 \hline
 Ускорение через $\vec{\tau}$:                                                &  % [5, 1]
 $\vec{w} = \frac{d\vec{v}}{dt} =
 \frac{d}{dt} (v \vec{\tau}) =
 \frac{dv}{dt} \vec{\tau} + v \frac{d\vec{\tau}}{ds} \frac{ds}{dt} =
 \frac{dv}{dt} \vec{\tau} + v^2 \frac{d \vec{\tau}}{ds}$                      &  % [5, 2]
-                                                                             &  % [5, 3]
-                                                                             \\ % [5, 4]
+Кватернион:                                                                  &  % [4, 3]
+$\Lambda = \lambda_0 i_0 + \lambda_1 i_1 + \lambda_2 i_2 + \lambda_3 i_3$    \\ % [4, 4]
 \hline
 Вектор кривизны, и его связь с $\vec{n}$:                                    &  % [6, 1]
 $\frac{d\vec{\tau}}{ds} = \frac{1}{\rho} \vec{n}$                            &  % [6, 2]
-                                                                             &  % [6, 3]
-                                                                             \\ % [6, 4]
+Свойства кватернионов:                                                       &  % [5, 3]
+$\begin{aligned}
+(\Lambda \circ \mathcal{M}) \circ \mathcal{N} = 
+ \Lambda \circ (\mathcal{M} \circ \mathcal{N}),             \\
+(\Lambda+\mathcal{M}) \circ(\mathcal{N}+\mathcal{R}) =      \\
+\Lambda \circ \mathcal{N} + \mathcal{M} \circ \mathcal{N} + \\
+\Lambda \circ \mathcal{R}  +\mathcal{M} \circ \mathcal{R},  \\
+(\lambda \Lambda) \circ(\mu \mathcal{M}) = 
+\lambda \mu \Lambda \circ \mathcal{M}                              
+\end{aligned}$                                                               \\ % [5, 4]
 \hline
 Разложение $\vec{w}$ по $\vec{\tau}$ и $\vec{n}$:                            &  % [7, 1]
 $\vec{w} = \frac{dv}{dt} \vec{\tau} + \frac{v^2}{\rho} \vec{n}$              &  % [7, 2]
-                                                                             &  % [7, 3]
-                                                                             \\ % [7, 4]
+Умножение кватернионов:                                                      &  % [6, 3]
+$\begin{aligned}
+i_{0} \circ i_{k} = i_k \circ i_0 = i_k, k=0,1,2,3        \\
+i_{k} \circ i_{k} = -i_{0},  k=1,2,3                      \\
+i_{1} \circ i_{2} =  i_{3}, i_{2} \circ i_{3} =  i_{1}, 
+i_{3} \circ i_{1} =  i_{2},                               \\
+i_{2} \circ i_{1} = -i_{3}, i_{3} \circ i_{2} = -i_{1},   \\
+i_{1} \circ i_{3} = -i_{2}                                \\
+\end{aligned}$                                                               \\ % [6, 4]
 \hline
 Вектор бинормали $\vec{b}$ :                                                 &  % [8, 1]
 $\vec{b} = \vec{\tau} \times \vec{n}$                                        &  % [8, 2]
@@ -62,15 +92,12 @@ $\vec{b} = \vec{\tau} \times \vec{n}$                                        &  
 \hline
 Касательные к координатныйм линиям ($\vec{r} = \vec{r} (q_1, q_2, q_3)$):    &  % [9, 1]
 $\begin{aligned}
-\frac{\partial \vec{r}}{\partial q_1} =
-\frac{\partial x}{\partial q_1} \vec{i} + \frac{\partial y}{\partial q_1} \vec{j} +
-\frac{\partial z}{\partial q_1} \vec{k} = H_1 \vec{e_1}, \\
-\frac{\partial \vec{r}}{\partial q_2} =
-\frac{\partial x}{\partial q_2} \vec{i} + \frac{\partial y}{\partial q_2} \vec{j} +
-\frac{\partial z}{\partial q_2} \vec{k} = H_2 \vec{e_2}, \\
-\frac{\partial \vec{r}}{\partial q_3} =
-\frac{\partial x}{\partial q_3} \vec{i} + \frac{\partial y}{\partial q_3} \vec{j} +
-\frac{\partial z}{\partial q_3} \vec{k} = H_3 \vec{e_3} 
+\frac{\partial \vec{r}}{\partial q_m} =
+\frac{\partial x}{\partial q_m} \vec{i} +
+\frac{\partial y}{\partial q_m} \vec{j} +
+\frac{\partial z}{\partial q_m} \vec{k} =  \\
+H_1 \vec{e_m}, 
+ m = 1, 2, 3 
 \end{aligned}$                                                               &  % [9, 2]
                                                                              &  % [9, 3]
                                                                              \\ % [9, 4]
@@ -117,55 +144,29 @@ H_1 \dot q_1 \vec{e_1} + H_2 \dot q_2 \vec{e_2} + H_2 \dot q_2 \vec{e_2}$    &  
                                                                              &  % [15, 3]
                                                                              \\ % [15, 4]
 \hline
-                                                                             &  % [16, 1]
-                                                                             &  % [16, 2]
+Ускорение:                                                                   &  % [16, 1]
+$\begin{aligned}
+\vec{w} = w_1 \vec{e_1} + w_2 \vec{e_2} + w_3 \vec{e_3},               \\
+\vec{w} = \frac{d^2 x}{d t^2} \vec{i} + \frac{d^2 y}{d t^2} \vec{j} +
+\frac{d^2 z}{d t^2} \vec{k} 
+\end{aligned}$                                                               &  % [16, 2]
                                                                              &  % [16, 3]
                                                                              \\ % [16, 4]
 \hline
-                                                                             &  % [17, 1]
-                                                                             &  % [17, 2]
+Производные декартовых координат через произвоные криволинейных:             &  % [17, 1]
+$\begin{aligned}
+\frac{d^2 x}{d t^2} = \sum_{l=1}^3 \sum_{m=1}^3
+\frac{\partial^2 x}{\partial q_l \partial q_m}
+\dot{q_l} \dot{q_m} + \frac{\partial x}{\partial q_l} \ddot{q_l},  \\
+\frac{d^2 y}{d t^2} = \sum_{l=1}^3 \sum_{m=1}^3
+\frac{\partial^2 y}{\partial q_l \partial q_m}
+\dot{q_l} \dot{q_m} + \frac{\partial y}{\partial q_l} \ddot{q_l},  \\
+\frac{d^2 z}{d t^2} = \sum_{l=1}^3 \sum_{m=1}^3
+\frac{\partial^2 z}{\partial q_l \partial q_m}
+\dot{q_l} \dot{q_m} + \frac{\partial z}{\partial q_l} \ddot{q_l}
+\end{aligned}$                                                               &  % [17, 2]
                                                                              &  % [17, 3]
                                                                              \\ % [17, 4]
-\hline
-                                                                             &  % [18, 1]
-                                                                             &  % [18, 2]
-                                                                             &  % [18, 3]
-                                                                             \\ % [18, 4]
-\hline
-                                                                             &  % [19, 1]
-                                                                             &  % [19, 2]
-                                                                             &  % [19, 3]
-                                                                             \\ % [19, 4]
-\hline
-                                                                             &  % [20, 1]
-                                                                             &  % [20, 2]
-                                                                             &  % [20, 3]
-                                                                             \\ % [20, 4]
-\hline
-                                                                             &  % [21, 1]
-                                                                             &  % [21, 2]
-                                                                             &  % [21, 3]
-                                                                             \\ % [21, 4]
-\hline
-                                                                             &  % [22, 1]
-                                                                             &  % [22, 2]
-                                                                             &  % [22, 3]
-                                                                             \\ % [22, 4]
-\hline
-                                                                             &  % [23, 1]
-                                                                             &  % [23, 2]
-                                                                             &  % [23, 3]
-                                                                             \\ % [23, 4]
-\hline
-                                                                             &  % [24, 1]
-                                                                             &  % [24, 2]
-                                                                             &  % [24, 3]
-                                                                             \\ % [24, 4]
-\hline
-                                                                             &  % [25, 1]
-                                                                             &  % [25, 2]
-                                                                             &  % [25, 3]
-                                                                             \\ % [25, 4]
 \hline
 \end{tabular}
 
