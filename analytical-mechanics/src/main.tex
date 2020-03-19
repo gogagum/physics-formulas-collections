@@ -6,7 +6,7 @@
 \usepackage{amssymb,amsmath}
 
 \begin{document}
-\begin{tabular}{ |p{6cm}|p{3.5cm}|p{6cm}|p{3.5cm}|  }
+\begin{tabular}{ |p{4cm}|p{5.5cm}|p{6cm}|p{3.5cm}|  }
 \hline
 \multicolumn{4}{|c|}{Аналитиеская механика.} \\
 \hline
@@ -30,8 +30,8 @@ $\vec{w} = \frac{d{\vec{v}}}{dt} =
 \hline
 Вектор $\vec{\tau}$, определение:                                            &  % [4, 1]
 $\begin{aligned}
-\vec{v} = \frac{d}{dt} \vec{r[s(t)]} =                         \\
-\frac{d\vec{r}}{ds} \frac{ds}{dt} = \vec{\tau} \frac{ds}{dt}, 
+\vec{v} = \frac{d}{dt} \vec{r[s(t)]} =                         
+\frac{d\vec{r}}{ds} \frac{ds}{dt} = \vec{\tau} \frac{ds}{dt},   \\
 \vec{\tau} = \frac{d\vec{r}}{ds}
 \end{aligned}$                                                               &  % [4, 2]
                                                                              &  % [4, 3]
@@ -45,8 +45,8 @@ $\vec{w} = \frac{d\vec{v}}{dt} =
                                                                              &  % [5, 3]
                                                                              \\ % [5, 4]
 \hline
-Вектор кривизны, и его связь с $\vec{n}$:                                     &  % [6, 1]
-$\frac{d\vec{\tau}}{ds} = \frac{1}{\rho} \vec{n}$                             &  % [6, 2]
+Вектор кривизны, и его связь с $\vec{n}$:                                    &  % [6, 1]
+$\frac{d\vec{\tau}}{ds} = \frac{1}{\rho} \vec{n}$                            &  % [6, 2]
                                                                              &  % [6, 3]
                                                                              \\ % [6, 4]
 \hline
@@ -56,42 +56,64 @@ $\vec{w} = \frac{dv}{dt} \vec{\tau} + \frac{v^2}{\rho} \vec{n}$              &  
                                                                              \\ % [7, 4]
 \hline
 Вектор бинормали $\vec{b}$ :                                                 &  % [8, 1]
-$\vec{b} = \vec{\tau} \times \vec{n}$                                             &  % [8, 2]
+$\vec{b} = \vec{\tau} \times \vec{n}$                                        &  % [8, 2]
                                                                              &  % [8, 3]
                                                                              \\ % [8, 4]
 \hline
-                                                                             &  % [9, 1]
-                                                                             &  % [9, 2]
+Касательные к координатныйм линиям ($\vec{r} = \vec{r} (q_1, q_2, q_3)$):    &  % [9, 1]
+$\begin{aligned}
+\frac{\partial \vec{r}}{\partial q_1} =
+\frac{\partial x}{\partial q_1} \vec{i} + \frac{\partial y}{\partial q_1} \vec{j} +
+\frac{\partial z}{\partial q_1} \vec{k} = H_1 \vec{e_1}, \\
+\frac{\partial \vec{r}}{\partial q_2} =
+\frac{\partial x}{\partial q_2} \vec{i} + \frac{\partial y}{\partial q_2} \vec{j} +
+\frac{\partial z}{\partial q_2} \vec{k} = H_2 \vec{e_2}, \\
+\frac{\partial \vec{r}}{\partial q_3} =
+\frac{\partial x}{\partial q_3} \vec{i} + \frac{\partial y}{\partial q_3} \vec{j} +
+\frac{\partial z}{\partial q_3} \vec{k} = H_3 \vec{e_3} 
+\end{aligned}$                                                               &  % [9, 2]
                                                                              &  % [9, 3]
                                                                              \\ % [9, 4]
 \hline
-                                                                             &  % [10, 1]
-                                                                             &  % [10, 2]
+Коэффициенты Ляме:                                                           &  % [10, 1]
+$H_k = \sqrt{(\frac{\partial x}{\partial q_k})^2 +
+ (\frac{\partial y}{\partial q_k})^2 + (\frac{\partial z}{\partial q_k})^2}$ &  % [10, 2]
                                                                              &  % [10, 3]
                                                                              \\ % [10, 4]
 \hline
-                                                                             &  % [11, 1]
-                                                                             &  % [11, 2]
+Ортогональные криволинейные координаты:                                      &  % [11, 1]
+$(\vec{e_1} \cdot \vec{e_2}) = (\vec{e_2} \cdot \vec{e_3}) =
+ (\vec{e_3} \cdot \vec{e_1}) = 0 $                                           &  % [11, 2]
                                                                              &  % [11, 3]
                                                                              \\ % [11, 4]
 \hline
-                                                                             &  % [12, 1]
-                                                                             &  % [12, 2]
+Эквивалентные условия ортогональности криволинейных координат:               &  % [12, 1]
+$\frac{\partial x}{\partial q_l} \frac{\partial x}{\partial q_m} =            
+ \frac{\partial y}{\partial q_l} \frac{\partial y}{\partial q_m} =
+ \frac{\partial z}{\partial q_l} \frac{\partial z}{\partial q_m} = 0$
+для $l \neq m$                                                               &  % [12, 2]
                                                                              &  % [12, 3]
                                                                              \\ % [12, 4]
 \hline
-                                                                             &  % [13, 1]
-                                                                             &  % [13, 2]
+Дифференциал дуги произвольной кривой (метрика пространства):                &  % [13, 1]
+$\begin{aligned}
+ds^2 = dx^2 + dy^2 + dz^2 =                       \\
+\sum_{i = 1}^3 \sum_{j = 1}^3 g_{ij} dq_i dq_j
+\end{aligned}$                                                               &  % [13, 2]
                                                                              &  % [13, 3]
                                                                              \\ % [13, 4]
 \hline
-                                                                             &  % [14, 1]
-                                                                             &  % [14, 2]
+Метрика пространства (случай ортогональных координат):                       &  % [14, 1]
+$ds^2 = H_1^2 d q_1^2 + H_2^2 d q_2^2 + H_3^2 d q_3^2$                           &  % [14, 2]
                                                                              &  % [14, 3]
                                                                              \\ % [14, 4]
 \hline
-                                                                             &  % [15, 1]
-                                                                             &  % [15, 2]
+Скорость через криволинейные координаты:                                     &  % [15, 1]
+$\vec{v} = \frac{d\vec{r}}{dt} =
+ \frac{\partial \vec{r}}{\partial q_1} \dot{q_1} +
+ \frac{\partial \vec{r}}{\partial q_2} \dot{q_2} +
+ \frac{\partial \vec{r}}{\partial q_3} \dot{q_3} = 
+H_1 \dot q_1 \vec{e_1} + H_2 \dot q_2 \vec{e_2} + H_2 \dot q_2 \vec{e_2}$    &  % [15, 2]
                                                                              &  % [15, 3]
                                                                              \\ % [15, 4]
 \hline
