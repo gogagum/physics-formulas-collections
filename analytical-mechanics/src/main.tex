@@ -12,83 +12,85 @@
 \hline
 Положение материальной точки:                                                &  % [1, 1]
 $\vec{r} = x(t) \vec{i} + y(t) \vec{j} + z(t) \vec{k}$                       &  % [1, 2]
-Углы Эйлера:                                                                 &  % [18, 1]
-Я не очень умею техатб.                                                      \\ % [1, 4]
+Ускорение:                                                                   &  % [1, 3]
+$\begin{aligned}
+\vec{w} = w_1 \vec{e_1} + w_2 \vec{e_2} + w_3 \vec{e_3},               \\
+\vec{w} = \frac{d^2 x}{d t^2} \vec{i} + \frac{d^2 y}{d t^2} \vec{j} +
+\frac{d^2 z}{d t^2} \vec{k}
+\end{aligned}$                                                               \\ % [1, 4]
 \hline
 Скорость материальной точки:                                                 &  % [2, 1]
 $\vec{v} = \frac{d{\vec{r}}}{dt} =
 \frac{dx}{dt} \vec{i} + \frac{dy}{dt} \vec{j} + \frac{dx}{dt} \vec{k}$       &  % [2, 2]
-Ортогональные отображения:                                                   &  % [1, 3]
+Производные декартовых координат через произвоные криволинейных:             &  % [2, 3]
 $\begin{aligned}
-\vec{R} = 
+\frac{d^2 \chi_i}{d t^2} = \sum_{l=1}^{l \leq 3} \sum_{m=1}^{m \leq 3}
+\frac{\partial^2 \chi_i}{\partial q_l \partial q_m}
+\dot{q_l} \dot{q_m} + \frac{\partial \chi_i}{\partial q_l} \ddot{q_l},  \\
+\chi_0 = x, \chi_1 = y, \chi_2 = z.
+\end{aligned}$                                                               \\ % [2, 4]
+\hline
+Ускорение материальной точки:                                                &  % [3, 1]
+$\vec{w} = \frac{d{\vec{v}}}{dt} =
+\frac{d^2 x}{dt^2} \vec{i} +
+\frac{d^2 y}{dt^2} \vec{j} + \frac{d^2 x}{dt^2} \vec{k}$                     &  % [3, 2]
+Углы Эйлера:                                                                 &  % [3, 3]
+Я не очень умею техатб.                                                      \\ % [3, 4]
+\hline
+Вектор $\vec{\tau}$, определение:                                            &  % [4, 1]
+$\begin{aligned}
+\vec{v} = \frac{d}{dt} \vec{r[s(t)]} =
+\frac{d\vec{r}}{ds} \frac{ds}{dt} = \vec{\tau} \frac{ds}{dt},   \\
+\vec{\tau} = \frac{d\vec{r}}{ds}
+\end{aligned}$                                                               &  % [4, 2]
+Ортогональные отображения:                                                   &  % [4, 3]
+$\begin{aligned}
+\vec{R} =
 \left(\begin{array}{c}
 x \\
 y \\
 z \\
-\end{array} \right),     
-\vec{R^{'}} = 
+\end{array} \right),
+\vec{R^{'}} =
 \left(\begin{array}{c}
 x^{'} \\
 y^{'} \\
 z^{'} \\
 \end{array} \right),         \\
 \vec{R^{'}} = A \vec{R}
-\end{aligned}$                                                               \\ % [1, 4]
-\hline
-Ускорение материальной точки:                                                &  % [3, 1]
-$\vec{w} = \frac{d{\vec{v}}}{dt} =
-\frac{d^2 x}{dt^2} \vec{i} +
-\frac{d^2 y}{dt^2} \vec{j} + \frac{d^2 x}{dt^2} \vec{k}$                     &  % [3, 2]
-Ортогональное преобразование для комплексного вектора:                       &  % [2, 3]
-$A (\vec{P} + i \vec{Q}) = A \vec{P} + i A \vec{Q}$                          \\ % [2, 4]
-\hline
-Вектор $\vec{\tau}$, определение:                                            &  % [4, 1]
-$\begin{aligned}
-\vec{v} = \frac{d}{dt} \vec{r[s(t)]} =                         
-\frac{d\vec{r}}{ds} \frac{ds}{dt} = \vec{\tau} \frac{ds}{dt},   \\
-\vec{\tau} = \frac{d\vec{r}}{ds}
-\end{aligned}$                                                               &  % [4, 2]
-<<Хорошее>> определение нормы комплексного вектора:                          &  % [3, 3]
-$\vec{P} + i \vec{Q} = \sqrt{(\vec{P} + i \vec{Q})(\vec{P} + i \vec{Q})} = 
-\sqrt{\vec{P^T}\vec{P} + \vec{Q^T}\vec{Q}}$                                  \\ % [3, 4]
+\end{aligned}$                                                               \\ % [4, 4]
 \hline
 Ускорение через $\vec{\tau}$:                                                &  % [5, 1]
 $\vec{w} = \frac{d\vec{v}}{dt} =
 \frac{d}{dt} (v \vec{\tau}) =
 \frac{dv}{dt} \vec{\tau} + v \frac{d\vec{\tau}}{ds} \frac{ds}{dt} =
 \frac{dv}{dt} \vec{\tau} + v^2 \frac{d \vec{\tau}}{ds}$                      &  % [5, 2]
-Кватернион:                                                                  &  % [4, 3]
-$\Lambda = \lambda_0 i_0 + \lambda_1 i_1 + \lambda_2 i_2 + \lambda_3 i_3$    \\ % [4, 4]
+Ортогональное преобразование для комплексного вектора:                       &  % [5, 3]
+$A (\vec{P} + i \vec{Q}) = A \vec{P} + i A \vec{Q}$                          \\ % [5, 4]
 \hline
 Вектор кривизны, и его связь с $\vec{n}$:                                    &  % [6, 1]
 $\frac{d\vec{\tau}}{ds} = \frac{1}{\rho} \vec{n}$                            &  % [6, 2]
-Свойства кватернионов:                                                       &  % [5, 3]
+<<Хорошее>> определение нормы комплексного вектора:                          &  % [6, 3]
+$\vec{P} + i \vec{Q} = \sqrt{(\vec{P} + i \vec{Q})(\vec{P} + i \vec{Q})} =
+\sqrt{\vec{P^T}\vec{P} + \vec{Q^T}\vec{Q}}$                                  \\ % [6, 4]
+\hline
+Разложение $\vec{w}$ по $\vec{\tau}$ и $\vec{n}$:                            &  % [7, 1]
+$\vec{w} = \frac{dv}{dt} \vec{\tau} + \frac{v^2}{\rho} \vec{n}$              &  % [7, 2]
+Кватернион:                                                                  &  % [7, 3]
+$\Lambda = \lambda_0 i_0 + \lambda_1 i_1 + \lambda_2 i_2 + \lambda_3 i_3$    \\ % [7, 4]
+\hline
+Вектор бинормали $\vec{b}$ :                                                 &  % [8, 1]
+$\vec{b} = \vec{\tau} \times \vec{n}$                                        &  % [8, 2]
+Свойства кватернионов:                                                       &  % [8, 3]
 $\begin{aligned}
-(\Lambda \circ \mathcal{M}) \circ \mathcal{N} = 
+(\Lambda \circ \mathcal{M}) \circ \mathcal{N} =
  \Lambda \circ (\mathcal{M} \circ \mathcal{N}),             \\
 (\Lambda+\mathcal{M}) \circ(\mathcal{N}+\mathcal{R}) =      \\
 \Lambda \circ \mathcal{N} + \mathcal{M} \circ \mathcal{N} + \\
 \Lambda \circ \mathcal{R}  +\mathcal{M} \circ \mathcal{R},  \\
-(\lambda \Lambda) \circ(\mu \mathcal{M}) = 
-\lambda \mu \Lambda \circ \mathcal{M}                              
-\end{aligned}$                                                               \\ % [5, 4]
-\hline
-Разложение $\vec{w}$ по $\vec{\tau}$ и $\vec{n}$:                            &  % [7, 1]
-$\vec{w} = \frac{dv}{dt} \vec{\tau} + \frac{v^2}{\rho} \vec{n}$              &  % [7, 2]
-Умножение кватернионов:                                                      &  % [6, 3]
-$\begin{aligned}
-i_{0} \circ i_{k} = i_k \circ i_0 = i_k, k=0,1,2,3        \\
-i_{k} \circ i_{k} = -i_{0},  k=1,2,3                      \\
-i_{1} \circ i_{2} =  i_{3}, i_{2} \circ i_{3} =  i_{1}, 
-i_{3} \circ i_{1} =  i_{2},                               \\
-i_{2} \circ i_{1} = -i_{3}, i_{3} \circ i_{2} = -i_{1},   \\
-i_{1} \circ i_{3} = -i_{2}                                \\
-\end{aligned}$                                                               \\ % [6, 4]
-\hline
-Вектор бинормали $\vec{b}$ :                                                 &  % [8, 1]
-$\vec{b} = \vec{\tau} \times \vec{n}$                                        &  % [8, 2]
-                                                                             &  % [8, 3]
-                                                                             \\ % [8, 4]
+(\lambda \Lambda) \circ(\mu \mathcal{M}) =
+\lambda \mu \Lambda \circ \mathcal{M}
+\end{aligned}$                                                               \\ % [8, 4]
 \hline
 Касательные к координатныйм линиям ($\vec{r} = \vec{r} (q_1, q_2, q_3)$):    &  % [9, 1]
 $\begin{aligned}
@@ -96,77 +98,100 @@ $\begin{aligned}
 \frac{\partial x}{\partial q_m} \vec{i} +
 \frac{\partial y}{\partial q_m} \vec{j} +
 \frac{\partial z}{\partial q_m} \vec{k} =  \\
-H_1 \vec{e_m}, 
- m = 1, 2, 3 
+H_1 \vec{e_m},
+ m = 1, 2, 3
 \end{aligned}$                                                               &  % [9, 2]
-                                                                             &  % [9, 3]
-                                                                             \\ % [9, 4]
+Умножение кватернионов:                                                      &  % [9, 3]
+$\begin{aligned}
+i_{0} \circ i_{k} = i_k \circ i_0 = i_k, k=0,1,2,3        \\
+i_{k} \circ i_{k} = -i_{0},  k=1,2,3                      \\
+i_{1} \circ i_{2} =  i_{3}, i_{2} \circ i_{3} =  i_{1},
+i_{3} \circ i_{1} =  i_{2},                               \\
+i_{2} \circ i_{1} = -i_{3}, i_{3} \circ i_{2} = -i_{1},   \\
+i_{1} \circ i_{3} = -i_{2}                                \\
+\end{aligned}$                                                               \\ % [9, 4]
 \hline
 Коэффициенты Ляме:                                                           &  % [10, 1]
 $H_k = \sqrt{(\frac{\partial x}{\partial q_k})^2 +
  (\frac{\partial y}{\partial q_k})^2 + (\frac{\partial z}{\partial q_k})^2}$ &  % [10, 2]
-                                                                             &  % [10, 3]
-                                                                             \\ % [10, 4]
+Ещё свойства умножения кватернионов:                                         &  % [10, 3]
+$i_0 \circ i_0 = i_0, i_0 \circ i_1 = i_1 \circ i_0 = i_1,
+ i_1 \circ i_1 = -i_0$                                                       \\ % [10, 4]
 \hline
 Ортогональные криволинейные координаты:                                      &  % [11, 1]
 $(\vec{e_1} \cdot \vec{e_2}) = (\vec{e_2} \cdot \vec{e_3}) =
  (\vec{e_3} \cdot \vec{e_1}) = 0 $                                           &  % [11, 2]
-                                                                             &  % [11, 3]
-                                                                             \\ % [11, 4]
-\hline
+Ортогональная матрица:                                                       &  % [11, 3]
+$\begin{aligned}
+\vec{R^{'}} =
+\left(\begin{array}{ccc}
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33}
+\end{array} \right) =                     \\
+\left(\begin{array}{ccc}
+\vec{r_{1}} & \vec{r_{2}} & \vec{r_{3}}
+\end{array} \right),                      \\
+|\vec{r_i}| = 1,
+\vec{r_i} \cdot \vec{r_j} = 0, i \neq j
+\end{aligned}$                                                               \\ % [11, 4]
+\hline.
 Эквивалентные условия ортогональности криволинейных координат:               &  % [12, 1]
-$\frac{\partial x}{\partial q_l} \frac{\partial x}{\partial q_m} =            
+$\frac{\partial x}{\partial q_l} \frac{\partial x}{\partial q_m} =
  \frac{\partial y}{\partial q_l} \frac{\partial y}{\partial q_m} =
  \frac{\partial z}{\partial q_l} \frac{\partial z}{\partial q_m} = 0$
 для $l \neq m$                                                               &  % [12, 2]
-                                                                             &  % [12, 3]
-                                                                             \\ % [12, 4]
+Матрица поворота относительно оси $X$ на угол $\phi$:                        &  % [12, 3]
+$A = \left(
+\begin{array}{ccc}
+1 & 0          & 0            \\
+0 & \cos(\phi) & -\sin(\phi)  \\
+0 & \sin(\phi) & \cos(\phi)
+\end{array}
+\right)$                                                                     \\ % [12, 4]
 \hline
 Дифференциал дуги произвольной кривой (метрика пространства):                &  % [13, 1]
-$\begin{aligned}
-ds^2 = dx^2 + dy^2 + dz^2 =                       \\
-\sum_{i = 1}^3 \sum_{j = 1}^3 g_{ij} dq_i dq_j
-\end{aligned}$                                                               &  % [13, 2]
-                                                                             &  % [13, 3]
-                                                                             \\ % [13, 4]
+$ds^2 = dx^2 + dy^2 + dz^2 =
+\sum_{i = 1}^3 \sum_{j = 1}^3 g_{ij} dq_i dq_j$                              &  % [13, 2]
+
+Числовая интерпритация кватернионов:                                         &  % [13, 3]
+$i_0$ -- $1$, $i_1$ -- $\sqrt{-1}$, то векторное пространство
+$\Lambda = \lambda_0 + \lambda_1 \sqrt{-1}$ подчиняется вышеуказанным
+правилам                                                                     \\ % [13, 4]
 \hline
 Метрика пространства (случай ортогональных координат):                       &  % [14, 1]
-$ds^2 = H_1^2 d q_1^2 + H_2^2 d q_2^2 + H_3^2 d q_3^2$                           &  % [14, 2]
-                                                                             &  % [14, 3]
-                                                                             \\ % [14, 4]
+$ds^2 = H_1^2 d q_1^2 + H_2^2 d q_2^2 + H_3^2 d q_3^2$                       &  % [14, 2]
+Матричная интерпритация кватернионов:                                        &  % [14, 3]
+$\begin{aligned}
+i_0 =
+\left(\begin{array}{cc}
+1 & 0 \\
+0 & 1
+\end{array}\right),
+i_1 =
+\left(\begin{array}{cc}
+0 & -1 \\
+1 & 0
+\end{array}\right),      \\
+\Lambda = \lambda_0 i_0 + \lambda_1 i_1
+\end{aligned}$
+                               \\ % [14, 4]
 \hline
 Скорость через криволинейные координаты:                                     &  % [15, 1]
 $\vec{v} = \frac{d\vec{r}}{dt} =
  \frac{\partial \vec{r}}{\partial q_1} \dot{q_1} +
  \frac{\partial \vec{r}}{\partial q_2} \dot{q_2} +
- \frac{\partial \vec{r}}{\partial q_3} \dot{q_3} = 
+ \frac{\partial \vec{r}}{\partial q_3} \dot{q_3} =
 H_1 \dot q_1 \vec{e_1} + H_2 \dot q_2 \vec{e_2} + H_2 \dot q_2 \vec{e_2}$    &  % [15, 2]
-                                                                             &  % [15, 3]
-                                                                             \\ % [15, 4]
-\hline
-Ускорение:                                                                   &  % [16, 1]
+Геометро-числовая интерпритация кватернионов:                                &  % [15, 3]
 $\begin{aligned}
-\vec{w} = w_1 \vec{e_1} + w_2 \vec{e_2} + w_3 \vec{e_3},               \\
-\vec{w} = \frac{d^2 x}{d t^2} \vec{i} + \frac{d^2 y}{d t^2} \vec{j} +
-\frac{d^2 z}{d t^2} \vec{k} 
-\end{aligned}$                                                               &  % [16, 2]
-                                                                             &  % [16, 3]
-                                                                             \\ % [16, 4]
-\hline
-Производные декартовых координат через произвоные криволинейных:             &  % [17, 1]
-$\begin{aligned}
-\frac{d^2 x}{d t^2} = \sum_{l=1}^3 \sum_{m=1}^3
-\frac{\partial^2 x}{\partial q_l \partial q_m}
-\dot{q_l} \dot{q_m} + \frac{\partial x}{\partial q_l} \ddot{q_l},  \\
-\frac{d^2 y}{d t^2} = \sum_{l=1}^3 \sum_{m=1}^3
-\frac{\partial^2 y}{\partial q_l \partial q_m}
-\dot{q_l} \dot{q_m} + \frac{\partial y}{\partial q_l} \ddot{q_l},  \\
-\frac{d^2 z}{d t^2} = \sum_{l=1}^3 \sum_{m=1}^3
-\frac{\partial^2 z}{\partial q_l \partial q_m}
-\dot{q_l} \dot{q_m} + \frac{\partial z}{\partial q_l} \ddot{q_l}
-\end{aligned}$                                                               &  % [17, 2]
-                                                                             &  % [17, 3]
-                                                                             \\ % [17, 4]
+\Lambda = \lambda_0 + \lambda_1 \vec{i_1} +
+ \lambda_2 \vec{i_2} + \lambda_2 \vec{i_2},         \\
+\lambda_0 \in \mathbb{R}, \vec{\lambda} \in \mathbb{E}^3
+\end{aligned}$
+
+
+\\ % [15, 4]
 \hline
 \end{tabular}
 
