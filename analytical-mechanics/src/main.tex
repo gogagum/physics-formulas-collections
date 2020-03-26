@@ -209,101 +209,162 @@ i_k \circ i_l = \vec{i_k} \times \vec{i_l} (k \neq l)
 Кватернионное сложение поворотов (активная точка зрения):                    &  % [1, 3]
 $\begin{aligned}
 R^\prime = \Lambda \circ R \circ \overline{\Lambda},
-R^{\prime\prime} = M \circ R \circ \overline{M},                       \\
+R^{\prime\prime} = \mathcal{M} \circ R \circ \overline{\mathcal{M}},  \\
 R^{\prime\prime} =
- M \circ \Lambda \circ R \circ \overline{\Lambda} \circ \overline{M} = \\
- M \circ \Lambda \circ R \circ \overline{\Lambda \circ M}
+ \mathcal{M} \circ \Lambda \circ R \circ
+ \overline{\Lambda} \circ \overline{\mathcal{M}} =                    \\
+ \mathcal{M} \circ \Lambda \circ R \circ
+ \overline{\mathcal{M} \circ \Lambda}
 \end{aligned}$                                                               \\ % [1, 4]
 \hline
 Произведение кватернионов геометро-числовой интерпритации:                   &  % [2, 1]
 $\begin{aligned}
 \Lambda = \lambda_0 + \vec{\lambda},              \\
-M = \mu_0 + \vec{\mu},                            \\
-\Lambda \circ M =
+\mathcal{\mathcal{M}} = \mu_0 + \vec{\mu},        \\
+\Lambda \circ \mathcal{M} =
 \lambda_0 \mu_0 - \vec{\lambda} \cdot \vec{\mu} + \\
 \lambda_0 \vec{\mu} +
 \mu_0 \vec{\lambda} + \vec{\lambda} \times \vec{\mu}
 \end{aligned}$                                                               &  % [2, 2]
 Кватернионное сложение поворотов (пассивная точка зрения)                    &  % [2, 3]
-                                                                             \\ % [2, 4]
+$\begin{aligned}
+i_k^\prime =\Lambda \circ i_k \overline{\Lambda},    \\
+R = x\vec{i_1} + y\vec{i_2} + z\vec{i_3},            \\
+R^{\left(\prime\right)} =
+ \overline{\Lambda} \circ
+ \left( x \vec{i_1^\prime} +
+ y \vec{i_2^\prime} + z \vec{i_3^\prime} \right)
+ \circ \Lambda =                                     \\
+ x^\prime \vec{i_1^\prime} +
+ y^\prime \vec{i_2^\prime} +
+ z^\prime \vec{i_3^\prime},                          \\
+ \mathcal{N}= \Lambda \circ \mathcal{M}
+\end{aligned}$                                   \\ % [2, 4]
 \hline
 Сопряженный кватернион:                                                      &  % [3, 1]
 $\Lambda = \lambda_0 + \vec{\lambda},
  \overline{\Lambda} = \lambda_0 + \vec{\lambda}$                             &  % [3, 2]
-                                                                             &  % [3, 3]
-                                                                             \\ % [3, 4]
+Определение угловой скорости:                                                &  % [3, 3]
+\[\vec{\omega} =
+ \lim_{\triangle t \to 0}
+ {\frac{\triangle \phi (t + \triangle t)}{\triangle t}}
+ \vec{\epsilon}(t + \triangle t)\]                               \\ % [3, 4]
 \hline
 Норма кватерниона:                                                           &  % [4, 1]
 $||\Lambda|| = \Lambda \circ \overline{\Lambda} =
  \overline{\Lambda} \circ \Lambda =
  \lambda_{0}^2 + \lambda_{1}^2 + \lambda_{2}^2 + \lambda_{3}^2$              &  % [4, 2]
-                                                                             &  % [4, 3]
-                                                                             \\ % [4, 4]
+Угловая скорость через кватернион:                                           &  % [4, 3]
+$\begin{aligned}
+\Lambda(t) =
+ \cos{\frac{\phi(t + \triangle t)}{2}} +                  \\
+ \vec{\epsilon}(t) \sin{\frac{\phi(t + \triangle t)}{2}}, \\
+\dot{\Lambda} = \frac{1}{2} \vec{\omega} \circ \Lambda(t),
+\vec{\omega} = 2 \overline{\Lambda} \circ \dot{\Lambda}
+\end{aligned}$                                                               \\ % [4, 4]
 \hline
 Свойства (1) и (2) произведения кватернионов:                                &  % [5, 1]
 $\begin{aligned}
-\Lambda \circ M \neq M \circ \Lambda,      \\
-\overline{\Lambda \circ M} = \overline{\Lambda} \circ \overline{M}
+\Lambda \circ \mathcal{M} \neq \mathcal{M} \circ \Lambda,      \\
+\overline{\Lambda \circ \mathcal{M}} =
+\overline{\mathcal{M}} \circ \overline{\Lambda}
 \end{aligned}$                                                               &  % [5, 2]
-                                                                             &  % [5, 3]
-                                                                             \\ % [5, 4]
+Сложение угловых скоростей:                                                  &  % [5, 3]
+$\vec{\omega} = \vec{\omega_1} + \vec{\omega_2}$ для
+ $\vec{\omega_1}$ и $\vec{\omega_2}, заданных в одних и тех же осях$         \\ % [5, 4]
 \hline
 Свойство (3) произведения кватернионов:                                      &  % [6, 1]
-$||\Lambda \circ M|| =
- (\Lambda \circ M) \circ \overline{(\Lambda \circ M)} =
- \Lambda \circ M \circ \overline{\Lambda} \circ \overline{M} =
- ||\Lambda|| \cdot ||M||$                                                    &  % [6, 2]
-                                                                             &  % [6, 3]
-                                                                             \\ % [6, 4]
+$||\Lambda \circ \mathcal{M}|| =
+ (\Lambda \circ \mathcal{M}) \circ \overline{(\Lambda \circ \mathcal{M})} =
+ \Lambda \circ \mathcal{M} \circ \overline{\Lambda} \circ
+ \overline{\mathcal{M}} = ||\Lambda|| \cdot ||\mathcal{M}||$                 &  % [6, 2]
+Формула Эйлера.                                                              &  % [6, 3]
+$\begin{aligned}
+\vec{r^{\prime}}(t) = \Lambda(t) \circ \vec{r} \circ \overline{\Lambda}(t), \\
+\dot{\vec{r}} = \vec{\omega} \times {\vec{r}}
+\end{aligned}$                                                               \\ % [6, 4]
 \hline
 Свойство (4) произведения кватернионов:                                      &  % [7, 1]
 Инвариантно относительно ортогональных преобразований в векторной
  части кватернионов.                                                         &  % [7, 2]
-                                                                             &  % [7, 3]
-                                                                             \\ % [7, 4]
+Формула Эйлера в матричной форме:                                            &  % [7, 3]
+$\begin{aligned}
+\dot{\vec{r^\prime}} = \Omega \vec{r^\prime}, \\
+\Omega =
+\left(\begin{array}{ccc}
+ 0        & -\omega_z &  \omega_y \\
+ \omega_z &  0        & -\omega_x \\
+-\omega_y &  \omega_x &  0
+\end{array}
+\right)\end{aligned}$                               \\ % [7, 4]
 \hline
 Свойство (5) произведения кватернионов (обратный):                           &  % [8, 1]
 $\Lambda^{-1} = \frac{\overline{\Lambda}}{||\Lambda||}$                      &  % [8, 2]
-                                                                             &  % [8, 3]
-                                                                             \\ % [8, 4]
+Уравнение Пуассона (x, y, z).                                                &  % [8, 3]
+$\begin{aligned}
+\vec{r^\prime} = A(t) \vec{r},              \\
+\dot{A} = \Omega A.
+\end{aligned}$                                                     \\ % [8, 4]
 \hline
 Присоединённое отображение:                                                  &  % [9, 1]
 $\mathcal{R} \rightarrow \mathcal{R}^{\prime}:
 \mathcal{R}^{\prime} = Ad \mathcal{R} =
 \Lambda \circ \mathcal{R} \circ \Lambda^{\prime}$                            &  % [9, 2]
-                                                                             &  % [9, 3]
-                                                                             \\ % [9, 4]
+Уравнение Пуассона $(\xi, \eta, \zeta)$.                                     &  % [9, 3]
+$\begin{aligned}
+\vec{r^\prime} = A(t) \vec{r},              \\
+\dot{A} = A \Omega
+\end{aligned}$                                                               \\ % [9, 4]
 \hline
 Свойства (1) и (2) присоединенного отображения:                              &  % [10, 1]
 Не меняет скалярной части,
  действует на векторную часть как линейное преобразование.                   &  % [10, 2]
-                                                                             &  % [10, 3]
-                                                                             \\ % [10, 4]
+Уравнение Пуассона в кватернионах $(x, y, z)$:                               &  % [10, 3]
+$2\dot{\Lambda} = \vec{\omega} \circ \Lambda$                                \\ % [10, 4]
 \hline
 Поворот через кватернион:                                                    &  % [11, 1]
 $\Lambda = \lambda_0 + \lambda \vec{e},
 \Lambda = \cos{\frac{\phi}{2}} + \vec{e} \sin{\frac{\phi}{2}}$ ---
 поворот на угол $\phi$ вокруг $\vec{e}$.                                     &  % [11, 2]
-                                                                             &  % [11, 3]
-                                                                             \\ % [11, 4]
+Уравнение Пуассона в кватернионах $(\xi, \eta, \zeta)$:                      &  % [11, 3]
+$2\dot{\Lambda} = \Lambda \circ \vec{\omega}$                                \\ % [11, 4]
 \hline
 Группа $SO(3)$:                                                              &  % [12, 1]
 $R^\prime = A R, R^{\prime\prime} = B R^\prime, R^{\prime\prime} = (BA) R,
 C = BA$---матрица, задающая суммарный поворот.                               &  % [12, 2]
-                                                                             &  % [12, 3]
-                                                                             \\ % [12, 4]
+Относительное движениие. Обозначения.                                        &  % [12, 3]
+$\begin{aligned}
+\vec{r} =
+\left(\begin{array}{c}
+\xi  \\
+\eta \\
+\zeta
+\end{array}\right),
+\vec{r_0} =
+\left(\begin{array}{c}
+x \\
+y \\
+z
+\end{array}\right),                           \\
+\vec{v_{rel}} = \dot{\vec{r}},
+\vec{w_{rel}} = \ddot{\vec{r}},
+\vec{v_0} = \dot{\vec{r_0}},
+\vec{w_0} = \ddot{\vec{r_0}}
+\end{aligned}$                                                               \\ % [12, 4]
 \hline
 Активная точка зрения.                                                       &  % [13, 1]
 Матрицы последовательных поворотов перемножаются в обратном порядке.
 Все матрицы вычисляются в общем для всех базисе $\vec{i}, \vec{j}, \vec{k}$. &  % [13, 2]
-                                                                             &  % [13, 3]
-                                                                             \\ % [13, 4]
+Сложение скоростей:                                                          &  % [13, 3]
+$\vec{v} = \vec{v_0} + \vec{\omega} \times \vec{r} + \vec{v_{rel}}$          \\ % [13, 4]
 \hline
 Пассивная точка зрения.                                                      &  % [14, 1]
 Матрицы последовательных поворотов перемножаются в прямом порядке.
 Каждая матрица рассматривается в поворачиваемом ею базисе.                   &  % [14, 2]
-                                                                             &  % [14, 3]
-                                                                             \\ % [14, 4]
+Сложение ускорений:                                                          &  % [14, 3]
+$\vec{w} = \vec{w_0} + \vec{\omega} \times (\vec{\omega} \times \vec{r}) +
+ \dot{\vec{\omega}} \times \vec{r} + 2 \vec{\omega} \times \vec{v_{rel}} +
+ \vec{w_{rel}}$                           \\ % [14, 4]
 \hline
 Ещё про активную точку зрения (сложение поворотов):                          &  % [15, 1]
 $R^{\left(\prime\right)} =
@@ -318,6 +379,99 @@ x \\
 y \\
 z \\
 \end{array}\right)$                                                          &  % [15, 2]
+                                                                             &  % [15, 3]
+                                                                             \\ % [15, 4]
+\hline
+\end{tabular}
+
+\newpage
+% page 3
+\begin{tabular}{ |p{3.8cm}|p{5.7cm}|p{6cm}|p{3.5cm}|  }
+\hline
+\multicolumn{4}{|c|}{Аналитиеская механика.} \\
+\hline
+Конфигурационное многообразие и число степеней свободы:                      &  % [1, 1]
+$M \subset \mathbb{R}^m$, однозначно отображаемое в множество возможных
+ положений системы. $m$ - число степеней свободы.                            &  % [1, 2]
+Обобщённый интеграл энергии:                                                 &  % [1, 3]
+$\sum_i {\dot{q_i} \frac{\partial \mathcal{L}}{\partial \dot{q_i}}} -
+ \mathcal{L} = const$                                       \\ % [1, 4]
+\hline
+Параметризация и лагранжевы параметры.                                       &  % [2, 1]
+$R = R(\nu, t, q_1, \dots, q_n), q_1, \dots, q_n$ --- лагранжевы параметры.  &  % [2, 2]
+                                                                             &  % [2, 3]
+                                                                             \\ % [2, 4]
+\hline
+Стационарная параметризация:                                                 &  % [3, 1]
+Параметризация не зависящая явно от времени.                                 &  % [3, 2]
+                                                                             &  % [3, 3]
+                                                                             \\ % [3, 4]
+\hline
+Нестационарная параметризация:                                               &  % [4, 1]
+Параметризация явно зависящая от времени.                                    &  % [4, 2]
+                                                                             &  % [4, 3]
+                                                                             \\ % [4, 4]
+\hline
+Кинематически независимые координаты и голономные системы.                   &  % [5, 1]
+Локальные координаты не стеснены никакими дополнительными условиями типа
+$f_k(t, q, \dot{q}) = 0, k = 1, \dots, s$, а такие механические системы
+называются голономными.                                                      &  % [5, 2]
+                                                                             &  % [5, 3]
+                                                                             \\ % [5, 4]
+\hline
+Виртуальное перемещение:                                                     &  % [6, 1]
+$\delta R = \sum_i{\frac{\partial R}{\partial q_i} \delta q_i}$              &  % [6, 2]
+                                                                             &  % [6, 3]
+                                                                             \\ % [6, 4]
+\hline
+Обобщённые силы:                                                             &  % [7, 1]
+$Q_i = \int \frac{\partial R}{\partial q_i} \cdot F^d dm$                    &  % [7, 2]
+                                                                             &  % [7, 3]
+                                                                             \\ % [7, 4]
+\hline
+Кинетическая энергия:                                                        &  % [8, 1]
+$T = \int {\vec{V} \cdot \vec{V} dm}$                                        &  % [8, 2]
+                                                                             &  % [8, 3]
+                                                                             \\ % [8, 4]
+\hline
+Уравнение Лагранжа:                                                          &  % [9, 1]
+$\frac{d}{dt} \frac{\partial T}{\partial \dot{q_i}} -
+\frac{\partial T}{\partial q_i} = Q_i (i = 1, \dots, n)$                     &  % [9, 2]
+                                                                             &  % [9, 3]
+                                                                             \\ % [9, 4]
+\hline
+Потенциальная сила:                                                          &  % [10, 1]
+Существует $U$, что $Q_i = \frac{\partial U}{\partial q_i} (i = 1, \dots, n)$&  % [10, 2]
+                                                                             &  % [10, 3]
+                                                                             \\ % [10, 4]
+\hline
+Обощённо потенциальная сила:                                                 &  % [11, 1]
+Существует $U$, что $Q_i = \frac{\partial U}{\partial q_i} -
+ \frac{d}{dt} \frac{\partial U}{\partial \dot{q_i}} (i = 1, \dots, n)$       &  % [11, 2]
+                                                                             &  % [11, 3]
+                                                                             \\ % [11, 4]
+\hline
+Функция Лагранжа:                                                            &  % [12, 1]
+$\mathcal{L} = T + U$                                                        &  % [12, 2]
+                                                                             &  % [12, 3]
+                                                                             \\ % [12, 4]
+\hline
+Уравнение Лагранжа через функцию Лагранжа:                                   &  % [13, 1]
+$\frac{d}{dt} \frac{\partial \mathcal{L}}{\partial \dot{q_i}} -
+ \frac{\partial \mathcal{L}}{\partial q_i} = 0 (i = 1, \dots, n)$            &  % [13, 2]
+                                                                             &  % [13, 3]
+                                                                             \\ % [13, 4]
+\hline
+Ковариантность уравнений Лагранжа:                                           &  % [14, 1]
+Если обощённые координаты подвергнуть преобразованиям $q_i \to \tilde{q_i}$
+ из $C_2$:
+\[q_i = q_i(t, \tilde{q}) \]
+то в новых переменных уравнения Лагранжа сохраняют форму.                    &  % [14, 2]
+                                                                             &  % [14, 3]
+                                                                             \\ % [14, 4]
+\hline
+Невырожденность уравнений Лагранжа:                                          &  % [15, 1]
+$\dots$                                                                      &  % [15, 2]
                                                                              &  % [15, 3]
                                                                              \\ % [15, 4]
 \hline
