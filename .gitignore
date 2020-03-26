@@ -1,6 +1,5 @@
-analytical-mechanics/README.md
 analytical-mechanics/src/main.pdf
-analytical-mechanics/src/main.synctex.gz
-physics
+physics/3-electricity-and-magnetism/src/main.pdf
 *.log
 *.aux
+*.gz
