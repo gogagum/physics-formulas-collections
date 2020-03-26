@@ -1,5 +1,5 @@
-physics/3-electricity-and-magnetism/src/main.aux
-physics/3-electricity-and-magnetism/src/main.log
+analytical-mechanics/src/main.pdf
 physics/3-electricity-and-magnetism/src/main.pdf
-physics/3-electricity-and-magnetism/src/main.synctex.gz
-analytical-mechanics/
+*.log
+*.aux
+*.gz
