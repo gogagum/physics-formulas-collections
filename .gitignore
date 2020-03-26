@@ -1,6 +1,6 @@
 analytical-mechanics/README.md
-analytical-mechanics/src/main.aux
-analytical-mechanics/src/main.log
 analytical-mechanics/src/main.pdf
 analytical-mechanics/src/main.synctex.gz
 physics
+*.log
+*.aux
