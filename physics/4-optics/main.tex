@@ -1,0 +1,248 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=0cm,right=0cm,top=0cm,bottom=0cm,bindingoffset=0cm]{geometry}
+\usepackage[russian]{babel}
+\usepackage{amssymb,amsmath}
+
+\begin{document}
+\begin{tabular}{ |p{4.1cm}|p{5.4cm}|p{3.9cm}|p{5.6cm}|  }
+\hline
+\multicolumn{4}{|c|}{Оптика.} \\
+\hline
+Закон преломления:                                                           &  % [1, 1]
+$n_1 \sin{\varphi_1} = n_2 \sin{\varphi_2}$                                  &  % [1, 2]
+Электромагнитное поле сферической волны:                                     &  % [1, 3]
+$\begin{aligned}
+\vec{H} = k^2 (\vec{n} \times \vec{p_0}) \frac{e^{i(kr - \omega t)}}{r}, \\
+\vec{E} = \vec{H} \times \vec{n}, k = \frac{\omega}{c},
+\vec{n} = \frac{\vec{r}}{r}
+\end{aligned}$                                                               \\ % [1, 4]
+\hline
+Закон отражения:                                                             &  % [2, 1]
+Угол падения равен углу отражения.                                           &  % [2, 2]
+Показатели преломления и отражения:                                          &  % [2, 3]
+$\sqrt{\varepsilon} = n + i\kappa$                                           \\ % [2, 4]
+\hline
+Формула тонкой линзы:                                                        &  % [3, 1]
+$\frac{1}{F} = \frac{1}{f} + \frac{1}{d}$                                    &  % [3, 2]
+Асимптотическое значение показателя преломления:                             &  % [3, 3]
+$n_0 = n(0) = \sqrt{1 + \frac{\omega_p^2}{\omega_0^2}}$                      \\ % [3, 4]
+\hline
+Фокусное расстояние через радиусы кривизны:                                  &  % [4, 1]
+$\frac{1}{F} = (n-1)(\frac{1}{R_1} + \frac{1}{R_2})$ (<<->> перед
+$\frac{1}{R_i}$, если соответствующая поверхность вогнутая)                  &  % [4, 2]
+Закон Бугера:                                                                &  % [4, 3]
+$\begin{aligned}
+k = \frac{\omega \sqrt{\varepsilon}}{c} =
+ \frac{\omega}{c}n + i \frac{\omega}{c} \kappa =    \\
+ k_r + i \frac{\alpha}{2},
+I = I_0 e^{-\alpha x}
+\end{aligned}$                                                                             \\ % [4, 4]
+\hline
+Фокусное расстояние двух линз:                                               &  % [5, 1]
+$\frac{1}{F} = \frac{1}{F_1} + \frac{1}{F_2} - \frac{1}{F_1 F_2}$            &  % [5, 2]
+Диэлектрическая проницаемость плазмы:                                        &  % [5, 3]
+$\varepsilon = 1 - (\frac{\omega_p}{\omega})^2 =
+ 1 - \frac{4 \pi N e^2}{m \omega^2}$                                         \\ % [5, 4]
+\hline
+Волновое уравнение:                                                          &  % [6, 1]
+$\frac{1}{v^2} \frac{\partial^2 \vec{E}}{\partial t^2} - \Delta \vec{E} = 0,
+\frac{1}{v^2} \frac{\partial^2 \vec{H}}{\partial t^2} - \Delta \vec{H} = 0$  &  % [6, 2]
+Групповая скорость:                                                          &  % [6, 3]
+$v_{gr} = \frac{d \omega}{d k}$                                                 \\ % [6, 4]
+\hline
+Скорость света в среде:                                                      &  % [7, 1]
+$v = \frac{c}{n} = \frac{c}{\sqrt{\epsilon\mu}}$                             &  % [7, 2]
+Интенсивность суммы двух волн:                                               &  % [7, 3]
+$I = I_1 + I_2 + 2 \sqrt{I_1 I_2} cos [\Delta \varphi(r)]$                                       \\ % [7, 4]
+\hline
+Уравнение Гельмгольца:                                                       &  % [8, 1]
+$\Delta \vec{E} + \frac{\omega^2}{v^2} \vec{E} = 0,
+\Delta \vec{H} + \frac{\omega^2}{v^2} \vec{H} = 0$                           &  % [8, 2]
+Видимость:                                                                   &  % [8, 3]
+$V = \frac{I_{max} - I_{min}}{I_{max} + I_{min}}$                                                     \\ % [8, 4]
+\hline
+Плоская волна:                                                               &  % [9, 1]
+$\vec{E}(x, t) = \vec{E_1} \cos((\vec{k}, \vec{x}) - \omega t + \varphi_1)$  &  % [9, 2]
+Интенсивность максимумов:                                                    &  % [9, 3]
+$I_{max} = (\sqrt{I_1} + \sqrt{I_2})^2$                                      \\ % [9, 4]
+\hline
+Комплексная амплитуда:                                                       &  % [10, 1]
+$\vec{E}(x, t) = \vec{E_0} \exp(i(\vec{k}, \vec{x}) - \omega t)$             &  % [10, 2]
+Интенсивность минимумов:                                                     &  % [10, 3]
+$I_{min} = (\sqrt{I_1} - \sqrt{I_2})^2$                                      \\ % [10, 4]
+\hline
+Волновое число:                                                              &  % [11, 1]
+$|\vec{k}| = \frac{\omega}{v} = \frac{\omega}{c} n, \vec{k}$ задаёт
+ направление распространения волны.                                          &  % [11, 2]
+Видимость суммы двух волн:                                                   &  % [11, 3]
+$V = \frac{2 \sqrt{I_1 I_2}}{I_1 + I_2}$                                     \\ % [11, 4]
+\hline
+Фазовая скорость волны:                                                      &  % [12, 1]
+$v = \frac{\omega}{k} = \frac{c}{n}$                                         &  % [12, 2]
+Интер-ция двух плоских волн с уравнениями:
+$A_i(\vec{r}, t) = a_i \cos(\vec{k_i}\vec{r} - \omega t + \varphi_i),
+ i = 1, 2$                                                                   &  % [12, 3]
+$\begin{aligned}
+I = I_1 + I_2 + 2 \sqrt{I_1 I_2} cos [\vec{K} \vec{r} + \delta],  \\
+\vec{K} = \vec{k_1} - \vec{k_2}, \delta = \varphi_1 - \varphi_2
+\end{aligned}$                                                               \\ % [12, 4]
+\hline
+Длина волны:                                                                 &  % [13, 1]
+$\lambda = vT = \frac{C}{nV} = \frac{2 \pi c}{n \omega} =
+ \frac{\lambda_0}{n}, \lambda_0$ -- длина волны в вакууме.                   &  % [13, 2]
+Условие максимумов:                                                          &  % [13, 3]
+$(\vec{K} \cdot \vec{r}) + \delta = 2 \pi m, m \in \mathbb{Z}$                          \\ % [13, 4]
+\hline
+Фаза волны:                                                                  &  % [14, 1]
+$\varphi = (\vec{k}, \vec{r}) - \omega t$                                    &  % [14, 2]
+Условие минимумов:                                                           &  % [14, 3]
+$(\vec{K} \cdot \vec{r}) + \delta = \pi (2 m + 1), m \in \mathbb{Z}$         \\ % [14, 4]
+\hline
+Связь амплитуд $\vec{H}$ и $\vec{E}$:                                        &  % [15, 1]
+$\sqrt{\varepsilon} E_0 = \sqrt{\mu} H_0$                                    &  % [15, 2]
+Расстояние между полосами:                                                   &  % [15, 3]
+$\begin{aligned}
+K = |\vec{k_1} - \vec{k_2}| = 2k\sin(\frac{\alpha}{2}),  \\
+\Delta x = \frac{2 \pi}{K} = \frac{\lambda}{2 \sin(\frac{\alpha}{2})}
+\end{aligned}$                                                               \\ % [15, 4]
+\hline
+Уравнения Максвелла для плоских волн:                                        &  % [16, 1]
+$\begin{aligned}
+\vec{k} \times \vec{E} = \frac{\omega}{c} \vec{B}, (\vec{k}, \vec{D}) = 0, \\
+\vec{k} \times \vec{H} = \frac{\omega}{c} \vec{D}, (\vec{k}, \vec{B}) = 0
+\end{aligned}$                                                               &  % [16, 2]
+Максимумы в схеме Юнга:                                                      &  % [16, 3]
+$x_{max} = \frac{\lambda L}{d} m$                                            \\ % [16, 4]
+\hline
+Расходящаяся сферическая волна:                                              &  % [17, 1]
+$A = A_0 \frac{e^{i k r-i \omega t}}{r}$                                     &  % [17, 2]
+Минимумы в схеме Юнга:                                                       &  % [17, 3]
+$x_{min} = \frac{\lambda L}{d} (m + \frac{1}{2})$                                                                             \\ % [17, 4]
+\hline
+Сходящаяся сферическая волна:                                                &  % [18, 1]
+$A = A_0 \frac{e^{-i k r-i \omega t}}{r}$                                    &  % [18, 2]
+Функция когерентности:                                                       &  % [18, 3]
+$\begin{aligned}
+\overline{A^2(t)} = \overline{A^2(t+\tau)} = I_0, \\
+\overline{A^2(t) A^2(t+\tau)} = \Gamma(\tau),     \\
+I = 2 I_0 + 2 \Gamma(\tau)
+\end{aligned}$                                                               \\ % [18, 4]
+\hline
+\end{tabular}
+
+\newpage
+
+\begin{tabular}{ |p{4.2cm}|p{5.3cm}|p{6cm}|p{3.5cm}|  }
+\hline
+\multicolumn{4}{|c|}{Оптика.} \\
+\hline
+Комплексная функция когерентности:                                           &  % [1, 1]
+$\hat{\Gamma}(\tau) = I_0 e^{i \omega_0 \tau}$                               &  % [1, 2]
+                                                                             &  % [1, 3]
+                                                                             \\ % [1, 4]
+\hline
+Степень временной когерентности $\gamma$:                                    &  % [2, 1]
+$\begin{aligned}
+\hat{\Gamma}(\tau) = I_0 \hat{\gamma}(\tau),  \\
+\hat{\gamma}(\tau) = | \gamma (\tau) | e^{i[\omega_0 \tau + \varphi_0(\tau)]}
+\end{aligned}$                                                               &  % [2, 2]
+                                                                             &  % [2, 3]
+                                                                             \\ % [2, 4]
+\hline
+Связь видимости и степени когерентности:                                     &  % [3, 1]
+$V = |\gamma(\tau)|$                                                         &  % [3, 2]
+                                                                             &  % [3, 3]
+                                                                             \\ % [3, 4]
+\hline
+Функция временной когерентности:                                             &  % [4, 1]
+$\Gamma(\tau) = \frac{1}{\Delta \tau}
+ \int_0^{\Delta t} A(t_1) A(t_1 + \tau) dt$                                         &  % [4, 2]
+                                                                             &  % [4, 3]
+                                                                             \\ % [4, 4]
+\hline
+Теорема Винера-Хинчина:                                                      &  % [5, 1]
+$\begin{aligned}
+dI_0 = J(\omega) d\omega, I_0 = \int_0^\infty J(\omega) d\omega, \\
+I = 2 \int_0^\infty J(\omega)(1 + \cos(\omega \tau)) d\omega,    \\
+\Gamma(\tau) = \int_0^{\infty} J(\omega) \cos{\omega \tau} d \omega
+\end{aligned}$                                                               &  % [5, 2]
+                                                                             &  % [5, 3]
+                                                                             \\ % [5, 4]
+\hline
+Теорема Винера-Хинчина (комплексная форма):                                  &  % [6, 1]
+$\hat{\Gamma}(\tau) =
+ \int_{-\infty}^{\infty} J(\omega) e^{i \omega \tau} d\omega$                &  % [6, 2]
+                                                                             &  % [6, 3]
+                                                                             \\ % [6, 4]
+\hline
+Радиус $m$-ой зоны Френеля:                                                  &  % [7, 1]
+$R_m = \sqrt{m \lambda f}$                                                   &  % [7, 2]
+                                                                             &  % [7, 3]
+                                                                             \\ % [7, 4]
+\hline
+П-дь $m$-ой зоны Френеля:                                                    &  % [8, 1]
+$S_m = \pi \lambda f$                                                        &  % [8, 2]
+                                                                             &  % [8, 3]
+                                                                             \\ % [8, 4]
+\hline
+Разность хода от двух соседних щелей в дифракционной решетке:                &  % [9, 1]
+$\Delta = d \sin \Theta$                                                     &  % [9, 2]
+                                                                             &  % [9, 3]
+                                                                             \\ % [9, 4]
+\hline
+Условие максимумов для решетки:                                              &  % [10, 1]
+$d \sin \Theta = m \lambda$                                                  &  % [10, 2]
+                                                                             &  % [10, 3]
+                                                                             \\ % [10, 4]
+\hline
+Распределение интенсивности излучения при дифракции Фраунгофера:             &  % [11, 1]
+$I = I_0 \frac{sin^2(\frac{N}{2} kd \cdot sin(\Theta))}
+              {sin^2(\frac{1}{2} kd \cdot sin(\Theta))}$                                             &  % [11, 2]
+                                                                             &  % [11, 3]
+                                                                             \\ % [11, 4]
+\hline
+Соотношения для направлений на главные максимумы при дифракции на решетке:   &  % [12, 1]
+$d(\sin{\Theta}-\sin{\Theta_0}) = m \lambda$                                 &  % [12, 2]
+                                                                             &  % [12, 3]
+                                                                             \\ % [12, 4]
+\hline
+Интенсивность излучения в главных максимумах:                                &  % [13, 1]
+$I = N^2 I_0$                                                                &  % [13, 2]
+                                                                             &  % [13, 3]
+                                                                             \\ % [13, 4]
+\hline
+Угловая ширина главного максимума:                                           &  % [14, 1]
+$\Delta \Theta = \frac{2 \lambda}{Nd}$                                                   &  % [14, 2]
+                                                                             &  % [14, 3]
+                                                                             \\ % [14, 4]
+\hline
+Интенсивность в дополнительных максимумах:                                   &  % [15, 1]
+$I^{(n)} = \frac{4 I_0}{(kd\Theta_{max})^2} =
+ \frac{I_0 N^2}{\pi^2 (n + \frac{1}{2})^2}$                                  &  % [15, 2]
+                                                                             &  % [15, 3]
+                                                                             \\ % [15, 4]
+\hline
+Влияние ширины щели на дифракционную картину:                                &  % [16, 1]
+$I=I_{0} \frac{\sin ^{2}\left(\frac{1}{2} k b \sin \theta\right)}
+              {\left(\frac{1}{2} k b \sin \theta\right)^{2}}
+         \frac{\sin ^{2}\left(\frac{1}{2} N k d \sin \theta\right)}
+              {\sin ^{2}\left(\frac{1}{2} k d \sin \theta\right)}$           &  % [16, 2]
+                                                                             &  % [16, 3]
+                                                                             \\ % [16, 4]
+\hline
+                                                                             &  % [17, 1]
+                                                                             &  % [17, 2]
+                                                                             &  % [17, 3]
+                                                                             \\ % [17, 4]
+\hline
+                                                                             &  % [18, 1]
+                                                                             &  % [18, 2]
+                                                                             &  % [18, 3]
+                                                                             \\ % [18, 4]
+\hline
+\end{tabular}
+
+
+\end{document}
