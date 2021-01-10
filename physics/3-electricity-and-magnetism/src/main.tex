@@ -1,0 +1,552 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=0cm,right=0cm,top=0cm,bottom=0cm,bindingoffset=0cm]{geometry}
+\usepackage[russian]{babel}
+\usepackage{amssymb,amsmath}
+
+\begin{document}
+\begin{tabular}{ |p{6cm}|p{3.5cm}|p{6cm}|p{3.5cm}|  }
+\hline
+\multicolumn{4}{|c|}{Электричество и магнетизм.} \\
+\hline
+Закон Кулона:                                                              &
+$\vec F = \frac{q_1 \cdot q_2}{r^2} \cdot \frac{\vec r}{r}$                &
+Электрическая ёмкость сферического конденсатора:                           &
+$C=\frac{q}{\Delta \varphi}=\frac{\varepsilon R_{1} R_{2}}{R_{2}-R_{1}}$   \\
+\hline
+Напряжённость электрического поля:                                         &
+$\vec E = \frac{q}{r^2} \cdot \frac{\vec r}{r}$                            &
+Электрическая ёмкость циллиндрического конденсатора:                       &
+$C=\frac{\varepsilon l}{2 \ln (b / a)}=\frac{\varepsilon a l}{2 d}=\frac{\varepsilon S}{4 \pi d}$\\
+\hline
+Поле диполя:                                                               &
+$\vec E = \frac{3(\vec p \cdot \vec r) \vec r- \vec p \cdot r^{2}}{r^{5}}$ &
+Электрическая ёмкость конденсатора:                                        &
+$C=\frac {q}{\Delta \varphi}$                                              \\
+\hline
+Теорема Гаусса (Интегральная форма):                                       &
+$\oint_{S} {\vec E} d {\vec S} = 4 \pi q$                                  &
+Электрическая ёмкость проводника:                                          &
+$C= \frac{q}{\varphi}$                                                     \\
+\hline
+Теорема Гаусса (Дифф. форма):                                              &
+$\operatorname{div} {\vec E} = 4 \pi \rho$                                 &
+Электрическая ёмкость плоского конденсатора:                               &
+$C=\frac{q}{\Delta \varphi}=\frac{\varepsilon S}{4 \pi d}$                 \\
+\hline
+Разность потенциалов:                                                      &
+$\int_{(1)}^{(2)} {\vec E}({\vec r}) d {\vec r}=\varphi_{1}-\varphi_{2}$   &
+Энергия электрического поля:                                               &
+$\delta U=\int \frac{\vec{E} \delta \vec{D}}{8 \pi} d V$ \\
+\hline
+Теорема о циркуляции в вакууме (Статика) (Интегральная форма):             &
+$\oint_{L} {\vec E} d {\vec r} = 0$                                        &
+Энергия жёсткого диполя в электрическом поле:                              &
+$\begin{aligned}
+U\left(\theta_{0}\right)=0,             \\
+\theta_{0} = \frac{\pi}{2},             \\
+U=-\vec{p} \vec{E}
+\end{aligned}$                                                             \\
+\hline
+Теорема о циркуляции в вакууме (Статика) (Дифф. форма):                    &
+$\operatorname{rot} {\vec E}=0$                                            &
+Сила, действующая на диполь в неоднородном электрическом поле:             &
+$\vec{F}=(\vec{p} \cdot \vec\nabla)$                                       \\
+\hline
+Связь потенциала с напряженностью:                                         &
+$\vec E=-\operatorname{grad} \varphi$                                      &
+Энергия упругого диполя в электрическом поле:                              &
+$\begin{aligned}
+k l=q E,                                                                   \\
+p=\frac{q^{2} E}{\kappa}=\beta E,                                          \\
+U=\frac{\kappa l^{2}}{2}=\frac{q E l}{2}=\frac{p E}{2},                    \\
+U=\frac{1}{2} \vec{p} \cdot \vec{E}
+\end{aligned}$                                                             \\
+\hline
+Потенциал поля точечного диполя:                                           &
+$\varphi = -({\vec l} \cdot {\vec \nabla}) \frac{q}{r}=\frac{{\vec p} \cdot {\vec r}}{r^{3}}$ &
+Плотность тока:                                                            &
+$\vec{j}=\rho \vec{u}$                                                     \\
+\hline
+Уравнение Пуассона:                                                        &
+$\Delta \varphi=-4 \pi \rho$                                               &
+Ток:                                                                       &
+$J=\int_{S} \vec{j} d \vec{S}$                                             \\
+\hline
+Уравнение Лапласа (Уравнение Пуассона в случае $\rho = 0$):                &
+$\Delta \varphi=0$                                                         &
+Линейная плотность тока (для поверхностных токов):                         &
+$i = \frac{d{J}}{d{l}}$                                                    \\
+\hline
+Граничные условия (Нормаль):                                               &
+$\left(\vec{E}_{1}-\vec{E}_{2}\right) \vec n =4 \pi \sigma$                &
+Закон сохранения заряда (Дифф. форма):                                     &
+$\frac{\partial \rho}{\partial t}+\operatorname{div} \vec{j}=0$            \\
+\hline
+Граничные условия (Параллельная):                                          &
+$\left(\vec {E}_{1}-\vec{E}_{2}\right) \vec\tau=0$                         &
+Закон Ома (Интегральная форма):                                            &
+$J=\frac{U}{R}$                                                            \\
+\hline
+Проводники:                                                                &
+$\vec E_{in} = 0, {\varphi}_{in} = C$                                      &
+Закон Ома (Дифф. форма):                                                   &
+$\vec{j}=\lambda \vec{E}$                                                  \\
+\hline
+Вектор поляризации:                                                        &
+$\vec{P}=\frac{\vec{p}}{V}$                                                &
+Первое правило Кирхгофа (Узел):                                            &
+$\sum_{k} J_{k}=0$                                                         \\
+\hline
+Величина поляризованных зарядов в диэлектрике:                             &
+$q_{pol}=-\int_{V} \operatorname{div} \vec{P} d V$                         &
+Второе правило Кирхгофа (Замкнутый контур):                                &
+$\sum_{i} \mathcal{E}_{i}=\sum_{k} J_{k} R_{k}$                            \\
+\hline
+Плотность поляризованных зарядов в диэлектрике:                            &
+${\rho}_{pol}=-{div} \vec{P}$                                              &
+Закон Джоуля—Ленца (Дифф. форма):                                          &
+$w=n \vec{F} \vec{u}=\vec{j} \cdot \vec{E} = \lambda \vec{E}^{2}$          \\
+\hline
+Поверхностная плотность поляризованных зарядов на поверхности диэлектрика: &
+$P_{n}=\frac{\vec{P} \cdot \vec{S}}{S} = \frac{1}{S}\left(\frac{\sigma S \vec{l}}{\vec{S} \cdot \vec{l}}\right) \vec{S}=\sigma$ &
+Закон Джоуля—Ленца (Инт. форма):                                           &
+$W=\mathcal{E}^{2} / R=J \mathcal{E}$                                      \\
+\hline
+Вектор электрической индукции:                                             &
+$\vec{D}=\vec{E}+4 \pi \vec{P}$                                            &
+Сила Лоренца:                                                              &
+$\vec{F}_{\Pi}=\frac{q}{c} [\vec{v} \times \vec{B}]$                       \\
+\hline
+Поляризуемость ($\alpha$):                                                 &
+$\vec{P} = \alpha \vec{E}$                                                 &
+Сила Ампера:                                                               &
+$\begin{aligned}
+d \vec{F}=\frac{1}{c} [\vec{j} \times \vec{B}] d V,  \\
+d \vec{F}=\frac{J}{c} [\vec{d{l}} \times \vec{B}]
+\end{aligned}$                                                             \\
+\hline
+Диэлектрическая проницаемость:                                             &
+$\vec{D}=(1+4 \pi \alpha) \vec{E}=\varepsilon \vec{E}$                     &
+Закон Био-Савара-Лапласа:                                                  &
+$d \vec{B}=\frac{1}{c} \frac{[\vec{j} \times \vec{r}]}{r^{3}} d V$,
+$\vec{d{B}}=\frac{J}{c} \frac{[d \vec{l} \times \vec{r}]}{r^{3}}$          \\
+\hline
+Теорема Гаусса (Дифф. форма):                                              &
+$\operatorname{div}{\vec{E}} = 4 \pi \left( \rho+\rho_{\mathrm{pol}} \right)$
+$\operatorname{div}{\vec{D}} = 4 \pi \rho$                                 &
+Магнитный момент рамки:                                                    &
+$\vec{m}=\frac{J}{c} \vec{s}$                                              \\
+\hline
+Теорема Гаусса (Интегральная форма):                                       &
+$\begin{aligned}
+\oint_{S} \vec{E} d \vec{S}=4 \pi \left(q+q_{\mathrm{pol}}\right),  \\
+q_{pol}=-\oint_{S} \vec{P} d \vec{S},                               \\
+\oint_{S} \vec{D} d \vec{S}=4 \pi q
+\end{aligned}$                                                             &
+Момент сил, действующих на рамку с током:                                  &
+$\vec{M}= [\vec{m} \times \vec{B}]$                                        \\
+\hline
+Граничные условия на границе раздела двух диэлектриков:                    &
+$\begin{aligned}
+(\vec{D_1}-\vec{D_2}) \vec{n} = 4 \pi \sigma,        \\
+(\vec{E_1}-\vec{E_2}) \vec{\tau}=0
+\end{aligned}$                                                             &
+Теорема о циркуляции магнитного поля в вакууме (Инт. форма):               &
+$\oint_{L(S)} \vec{B} d \vec{l}=\frac{4 \pi}{c} J$                         \\
+\hline
+\end{tabular}
+
+\newpage
+
+\begin{tabular}{ |p{6cm}|p{3.5cm}|p{6cm}|p{3.5cm}|  }
+\hline
+\multicolumn{4}{|c|}{Электричество и магнетизм.} \\
+\hline
+Взаимная энергия произвольного числа зарядов:                              &
+$U=\frac{1}{2} \sum_{i} q_{i}\left(\sum_{k, k \neq i} \frac{q_{k}}{r_{i k}}\right)=\frac{1}{2} \sum_{i} q_{i} \varphi_{i}$                            &
+Теорема о циркуляции магнитного поля в вакууме (Дифф. форма):              &
+$\operatorname{rot} \vec{B}=\frac{4 \pi}{c} \vec{j}$                       \\
+\hline
+Взаимная энергия зарядов:                                                  &
+$U_{12}=\frac {q_{1} \cdot q_{2}}{r_{12}}$                                 &
+Магнитное поле соленоида:                                                  &
+$B = \frac{4 \pi}{c} n J=\frac{4 \pi}{c} i$                                \\
+\hline
+Взаимная энергия произвольно распределенных зарядов:                       &
+$U=\frac{1}{2} \int_{V} \rho(\vec{r}) \varphi(\vec{r}) d V+\frac{1}{2} \int_{S} \sigma(\vec{r}) \varphi(\vec{r}) d S$                                      &
+Теорема Гаусса для магнитного поля (Инт. форма):                           &
+$\oint_{S} \vec{B} d \vec{S}=0$                                            \\
+\hline
+Теорема Гаусса для магнитного поля (Дифф. форма):                          &
+$\operatorname{div} \vec{B}=0$                                             &
+Установление тока в цепи, содержащей индуктивность:                        &
+$J(t)=\frac{\mathcal{E}}{R}\left(1-\exp \left(-\frac{R}{L} t\right)\right)$ \\
+\hline
+Вектор намагниченности:                                                    &
+$\vec{I}=\frac{d \vec{m}}{d V}$                                            &
+Магнитная энергия тока:                                                    &
+$U=\int_{0}^{J} \delta A=\frac{L J^{2}}{2 c^{2}}=\frac{J \Phi}{2 c}=\frac{\Phi^{2}}{2 L}$\\
+\hline
+Cвязь вектора намагниченности с молекулярными токами (Инт. форма):         &
+$J_{m}=c \oint_{L} \vec{I} d {\vec l}$                                     &
+Плотность энергии магнитного поля:                                         &
+$u_{m}=\frac{\mu \vec{H}^{2}}{8 \pi}=\frac{\vec{B} \cdot \vec{H}}{8 \pi}=\frac{\vec{B}^{2}}{8 \pi \mu}$ \\
+\hline
+Cвязь вектора намагниченности с молекулярными токами (Дифф. форма):        &
+$\vec{j}_{m}=c$ rot $\vec{I}$                                              &
+Взаимная энергия токов (собственный - own, взимный - mutual):              &
+$d U=d U_{\mathrm{o}}+d U_{\mathrm{m}}$,
+$d U_{\mathrm{o}}=\frac{1}{c^{2}} \sum_{i=1}^{n} L_{i i} J_{i} d J_{i}$,
+$d U_{\mathrm{m}}=\frac{1}{c^{2}} \sum_{i, k=1 ; i \neq j}^{n} L_{i k} J_{i} d J_{k}$\\
+\hline
+Вектор магнитной напряженности:                                            &
+$\vec{H}=\vec{B} - 4 \pi \vec{I}$                                          &
+Взаимная энергия токов:                                                    &
+$U=U_{\mathrm{o}}+U_{\mathrm{m}}=\frac{1}{2 c^{2}} \sum_{i, k}^{n} L_{i k} J_{i} J_{k}$ \\
+\hline
+Теорема о циркуляции магнитного поля в веществе (Инт. форма):              &
+$\oint_{L} \vec{H} d \vec{l}=\frac{4 \pi}{c} J$                            &
+Теорема взимности:                                                         &
+$L_{i k}=L_{k i}$                                                          \\
+\hline
+Теорема о циркуляции магнитного поля в веществе (Дифф. форма):             &
+$\operatorname{rot} \vec{H}=\frac{4 \pi}{c}$                               &
+Взаимная индуктивность двух катушек на общем магнитопроводе:               &
+$L_{12}=L_{21}=\sqrt{L_{1} L_{2}}$                                         \\
+\hline
+Граничные условия для вектора магнитной индукции:                          &
+$\left(\vec{B}_{1}-\vec{B}_{2}\right) \vec{n}=0$                           &
+Ток смещения:                                                              &
+$\operatorname{rot} \vec{H}=\frac{4 \pi}{c}\left(\vec{j}+\vec{j}_{m}\right)$
+$\operatorname{div} \vec{j}_{m}=-\operatorname{div} \vec{j}=\frac{\partial \rho}{\partial t}$
+$\vec{j}_{m}=\frac{1}{4 \pi} \frac{\partial \vec{D}}{\partial t}$          \\
+\hline
+Граничные условия для вектора магнитной напряженности:                     &
+$\left(\vec{H}_{1}-\vec{H}_{2}\right) \vec{\tau}= \frac{4 \pi}{c} i_{N}$   &
+1 уравнение Макссвелла (Интегральная форма):                               &
+$\oint_{S(V)} \vec{D} d \vec{S}=4 \pi Q, Q=\int_{V} \rho d V$              \\
+\hline
+Граничные условия для вектора магнитной напр. (В векторной форме):         &
+$[\vec{n} \times \left(\vec{H}_{1}-\vec{H}_{2}\right)]=\frac{4 \pi}{c} \vec{i}$ &
+2 уравнение Макссвелла (Интегральная форма):                               &
+$\oint_{L(S)} \vec{E} d \vec{l}=-\frac{1}{c} \int_{S} \frac{\partial \vec{B}}{\partial t} d \vec{S}$\\
+\hline
+Магнитная восприимчивость ($\boldsymbol{\kappa}$):                         &
+$\vec{I}=\boldsymbol{\kappa} \vec{H}$                                      &
+3 уравнение Макссвелла (Интегральная форма):                               &
+$\oint_{S(V)} \vec{B} d \vec{S}=0$                                         \\
+\hline
+Магнитная проницаемость ($\mu$):                                           &
+$\vec{B}=\mu \vec{H}, \quad \mu=1+4 \pi \boldsymbol{\kappa}$               &
+4 уравнение Макссвелла (Интегральная форма):                               &
+$\oint_{L(S)} \vec{H} d \vec{l}=\frac{4 \pi}{c}\left(J+J_{\mathrm{cu}}\right)=\frac{4 \pi}{c} J+\frac{1}{c} \int_{S} \frac{\partial \vec{D}}{\partial t} d \vec{S}$\\
+\hline
+Магнитная напряженность внутри намагниченного шара:                        &
+$\vec{H}=-\frac{4 \pi}{3} \vec{I}$                                         &
+1 уравнение Макссвелла (Дифф. форма):                                      &
+$\operatorname{div} \vec{D}=4 \pi \rho$                                    \\
+\hline
+Магнитная напряженность вне намагниченного шара:                           &
+$\vec{H}=\vec{B}=\frac{3(\vec{m} \cdot \vec{r}) \vec{r}-\vec{m} r^{2}}{r^{5}}$,
+$\vec{m}=\frac{4 \pi}{3} R^{3} \vec{I}$ -- магнитный момент шара.          &
+2 уравнение Макссвелла (Дифф. форма):                                      &
+$\operatorname{rot} \vec{E}=-\frac{1}{c} \frac{\partial \vec{B}}{\partial t}$\\
+\hline
+Первое правило Кирхгофа для магнитных цепей:                               &
+$\sum_{i} \Phi_{i}=0$                                                      &
+3 уравнение Макссвелла (Дифф. форма):                                      &
+$\operatorname{div} \vec{B}=0$                                             \\
+\hline
+Второе правило Кирхгофа для магнитных цепей:                               &
+$\sum_{i} \Phi_{i} R_{m i}=\sum_{k} F_{k}$                                 &
+4 уравнение Макссвелла (Дифф. форма):                                      &
+$\operatorname{rot} \vec{H}=\frac{4 \pi}{c}\left(\vec{j}+\vec{j}_{\mathrm{cu}}\right)=\frac{4 \pi}{c} \vec{j}+\frac{1}{c} \frac{\partial \vec{D}}{\partial t}$\\
+\hline
+ЭДС индукции:                                                              &
+$\mathcal{E}_{\mathrm{ind}}=-\frac{1}{c} \frac{d \Phi}{d t}$               &
+Граничные условия:                                                         &
+$\begin{aligned}
+D_{2 n}-D_{1 n} &=4 \pi \sigma, \\
+E_{2 t}=& E_{1 t}, \\
+B_{2 n}=& B_{1 n}, \\
+H_{2 \tau}-H_{1 \tau} &=\frac{4 \pi}{c} i_{N}
+\end{aligned}$                                                             \\
+\hline
+ЭДС индукции (Дифф. форма):                                                &
+$\operatorname{rot}\vec{E}=-\frac{1}{c} \frac{\partial \vec{B}}{\partial t}$ &
+Уравнение бегущей волны:                                                   &
+$u(x, t)=a \cos [k(x-v t)]$                                                \\
+\hline
+Переход в СО, которая движется относительно старой со скоростью $\vec{v}$: &
+$\begin{aligned}
+\vec{E}^{\prime}=\vec{E}+\frac{1}{c} [\vec{v} \times \vec{B}], \\
+\vec{B}^{\prime}=\vec{B}-\frac{1}{c} [\vec{v} \times \vec{E}]
+\end{aligned}$                                                             &
+Угловая частота:                                                           &
+$k v=\omega$                                                               \\
+\hline
+\end{tabular}
+
+\newpage
+
+\begin{tabular}{ |p{5cm}|p{4.5cm}|p{6cm}|p{3.5cm}|  }
+\hline
+\multicolumn{4}{|c|}{Электричество и магнетизм.} \\
+\hline
+Индуктивность (самоиндукция):                                              &
+$\Phi=\frac{1}{c} L J$                                                     &
+Уравнение бегущей волны:                                                   &
+$u(x, t)=a \cos (k x-\omega t)$                                            \\
+\hline
+Взаимная индукция ($\Phi_{12}$ - поток поля, создаваемого первым проводником, проходящее через второй): &
+$\Phi_{12}=\frac{1}{c} L_{12} J_{2}$                                       &
+Длина волны:                                                               &
+$\lambda=\frac{2 \pi}{k}$                                                  \\
+\hline
+Индуктивность идеального сол-да:                                           &
+$L=\frac{4 \pi \mu N^{2} S}{l}$                                            &
+Уравнение стоячей волны (простой случай):                                  &
+$u(x, t)=a \cos (k x-\omega t)+a \cos (k x+\omega t)=2 a \cos k x \cos \omega t$\\
+\hline
+Индуктивность тороидальнойой катушки ($a << R$ для второй ф-лы):           &
+$L=2 \mu N^{2} b \ln \left(1+\frac{a}{R}\right)$,
+$L=\frac{2 \mu N^{2} S}{R}$                                                &
+Ёмкость коаксильного кабеля ($a$ - внутренний радиус, $d$ - внешний):      &
+$C_{1}=\frac{\tau}{\Delta \varphi}=\frac{\varepsilon}{2 \ln (d / a)}$      \\
+\hline
+E-волна в волноводе                                                        &
+$\vec{H} \perp z$                                                          &
+Индуктивность коаксильного кабеля ($a$ - внутренний радиус, $d$ - внешний):&
+$L_{1}=2 \mu \ln (d / a)$                                                  \\
+\hline
+H-волна в волноводе:                                                       &
+$\vec{E} \perp z$                                                          &
+Cкорость волны в 2-проводной линии, кабеле:                                &
+$v=\frac{c}{\sqrt{L_{1} C_{1}}}=\frac{c}{\sqrt{\varepsilon \mu}}$          \\
+\hline
+Уравнение Гельмольца:                                                      &
+$\frac{1}{v^{2}} \frac{\partial^{2} \vec{E}}{\partial t^{2}}=\frac{\partial^{2} \vec{E}}{\partial x^{2}}+\frac{\partial^{2} \vec{E}}{\partial y^{2}}+\frac{\partial^{2} \vec{E}}{\partial z^{2}}$, $v=c / \sqrt{\varepsilon \mu}$&
+Вектор Пойнтинга (вектор плотности потока энергии):                        &
+$\vec{S}=\frac{c}{4 \pi} [\vec{E} \times \vec{H}]$                         \\
+\hline
+Уравнение Гельмольца ($\vec{E}(\vec{r}, t)=\vec{E}_{1}(\vec{r}) e^{-i \omega t}$):&
+$\frac{\partial^{2} \vec{E}}{\partial x^{2}}+\frac{\partial^{2} \vec{E}}{\partial y^{2}}+\frac{\partial^{2} \vec{E}}{\partial z^{2}}+\frac{\omega^{2}}{c^{2}} \vec{E}=0$&
+Теорема Пойнтинга (Интегральная форма):                                    &
+$\begin{aligned}
+\frac{d W}{d t}=                        \\
+-\oint_{\Pi(V)} \vec{S} d \vec{\Pi}-Q,  \\
+Q=\int_{V} \mathrm{jE} d V
+\end{aligned}$                                                             \\
+\hline
+H-волна:                                                                   &
+$E_{y}=E_{y}(x, z, t)=E_{0} \sin \left(\frac{\pi n}{a} x\right) \cdot \exp \left(i k_{z} z-i \omega t\right)$&
+Теорема Пойнтинга (Дифф. форма):                                           &
+$\frac{\partial w}{\partial t} = - \vec{j} \vec{E}-\operatorname{div} \vec{S}$\\
+\hline
+Уравнение волны ($\vec{E}$), бегущей в влоноводе вдоль оси z, $\vec{E_0} || OY$,
+$\vec{E}(\vec{r}, t)=\vec{E}_{0}(x, y) \exp \left(i k_{z} z-i \omega t\right)$&
+$E_{y}=E_{y}(x, z, t)=E_{0} \sin \left(\frac{\pi n}{a} x\right) \cdot \exp \left(i k_{z} z-i \omega t\right)$&
+Закон отражения:                                                           &
+$\theta=\theta^{\prime}$                                                   \\
+\hline
+Критическая (мин.) частота ($\vec{E_0} || OY$):                            &
+$\omega_{\mathrm{cr}}=\pi c / a$                                           &
+Закон преломления:                                                         &
+$n_{1} \sin \theta=n_{2} \sin \theta^{\prime \prime}$                      \\
+\hline
+Уравнение волны ($\vec{E}$), бегущей в влоноводе вдоль оси z:              &
+$E_{x}=A_{x} \cos \left(k_{x} x\right) \sin \left(k_{y} y\right)$
+$E_{y}=A_{y} \sin \left(k_{x} x\right) \cos \left(k_{y} y\right)$          &
+Показатель преломления:                                                    &
+$n=\frac{c}{v}$                                                            \\
+\hline
+Магнитное поле ТЕ-волны ($E_{y}=E_{0} \sin \left(\frac{\pi x}{a}\right) \exp \left(i k_{z} z-i \omega t\right), E_{x}=E_{z}=0$):&
+$H_{x}=-\frac{c k_{z}}{\omega} E_{0} \sin \left(\frac{\pi x}{a}\right) \cdot \exp \left(i k_{z} z-i \omega t\right)$,
+$H_{y}=0$,
+$H_{z}=-i \frac{\pi c}{a \omega} E_{0} \cos \left(\frac{\pi x}{a}\right) \cdot \exp \left(i k_{z} z-i \omega t\right)$&
+Амплитудные коэффициенты отражения ($r$) и прохождения ($d$) волны:        &
+$r=\frac{E_{0}^{\prime}}{E_{0}}, d=\frac{E_{0}^{\prime \prime}}{E_{0}}$    \\
+\hline
+Отражение электромагнитной волны от плоской поверхности идеального проводника ($OZ$ перпендикулярна поверхности): &
+$E_{x}^{(1)}=E_{x}+E_{x}^{\prime}=E_{0}\left(e^{i\left(k z_{z}-\omega t\right)}-e^{i\left(-k_{z} z-\omega t\right)}\right)=$
+$=2 i E_{0} e^{-i \omega t} \sin k z$
+$B_{y}^{(1)}=B_{y}+B_{y}^{\prime}=B_{0}\left(e^{i\left(k_{z} z-\omega t\right)}+e^{i\left(k_{z}^{\prime} z-\omega t\right)}\right)=$
+$=2 B_{0} e^{-i \omega t} \cos k z$                                        &
+s-поляризованная волна (вектор $\vec{E}$ перпендикулярен плоскости
+ падения):                                                                 &
+$\begin{aligned}
+r_{\perp}=-\frac{\sin \left(\theta-\theta^{\prime \prime}\right)}{\sin \left(\theta+\theta^{\prime \prime}\right)}, \\
+d_{\perp}=\frac{2 \sin \theta^{\prime \prime} \cos \theta}{\sin \left(\theta+\theta^{\prime \prime}\right)}
+\end{aligned}$                                                              \\
+\hline
+Отражение электромагнитной волны от плоской поверхности идеального
+ проводника ($\vec{E}$, $\vec{B}$, $OZ$ перпендикулярна поверхности):      &
+$\begin{aligned}
+E_{0 x}=-E_{0 x}^{\prime},                \\
+B_{0 y}=E_{0 x},                          \\
+\quad B_{0 y}^{\prime}=-E_{0 x}^{\prime}, \\
+B_{0 y}^{\prime}=B_{0 y}
+\end{aligned}$                                                             &
+p-поляризованная волна (вектор $\vec{E}$ перпендикулярен плоскости
+ падения):                                                                 &
+$\begin{aligned}
+r_{1}=-\frac{\operatorname{tg}\left(\theta-\theta^{\prime \prime}\right)}{\operatorname{tg}\left(\theta+\theta^{\prime \prime}\right)},  \\
+d_{\|}=\frac{4 \sin \theta^{\prime \prime} \cos \theta}{\sin 2 \theta+\sin 2 \theta^{\prime \prime}}
+\end{aligned}$ 
+                                                                           \\
+\hline
+Соотношение между амплитудами полей в бегущей волне:                       &
+$\sqrt{\varepsilon} E=\pm \sqrt{\mu} H$                                    &
+Коэффициент отражения:                                                     &
+$R=\frac{\left(I_{\mathrm{reflected}}\right)_{z}}{\left(I_{\mathrm{coming}}\right)_{z}}$\\
+\hline
+Плотность импульса электромагнитой волны:                                  &
+$\vec{g}=\frac{1}{c^{2}} \vec{S}=\frac{1}{4 \pi c} [\vec{E} \times \vec{H}]$&
+Коэффициент прохождения:                                                   &
+$D=\frac{\left(I_{\text {through}}\right)_{z}}{\left(I_{\text {coming}}\right)_{z}}$ \\
+\hline
+Вектор магнитной напряженности, создаваемый движущимся зарядом:            &
+$\vec{H}=\frac{1}{c} [\vec{v} \times \vec{E}]$                             &
+Коэффициент отражения (ещё формула):                                       &
+$R=\frac{n_{1} E_{0}^{\prime 2} \cos \theta^{\prime}}{n_{1} E_{0}^{2} \cos \theta}=r^{2}$\\
+\hline
+\end{tabular}
+
+\newpage
+
+\begin{tabular}{ |p{6cm}|p{3cm}|p{6cm}|p{3.5cm}|  }
+\hline
+\multicolumn{4}{|c|}{Электричество и магнетизм.} \\
+\hline
+Средняя мощность, излучаемая диполем с дипольным моментом $\vec{p}=\vec{p}_{0} \cos \omega t$ (законом Рэлея):&
+$\bar{Q}=\frac{p_{0}^{2}}{3 c^{3}} \omega^{4}$                             &
+Коэффициент прохождения (ещё формула):                                     &
+$D=\frac{n_{2} E_{0}^{\prime \prime} \cos \theta^{n}}{n_{1} E_{0}^{2} \cos \theta}=\frac{n_{2} \cos \theta^{\prime \prime}}{n_{1} \cos \theta} d^{2}$\\
+\hline
+Спектр волн в объёмном резонаторе (Минимальная частота - $\omega_{101}$, если $a > b$ и $\omega_{011}$, если $a < b$): &
+$\frac{\omega^{2}}{c^{2}}=\frac{\pi^{2} n^{2}}{a^{2}}+\frac{\pi^{2} m^{2}}{b^{2}}+\frac{\pi^{2} p^{2}}{h^{2}}$ &
+Угол Брюстера:                                                             &
+$\operatorname{tg} \theta_{\mathrm{E}}=\frac{n_2}{n_1}$                    \\
+\hline
+Соотношение между амплитудами тока и напр. в 2-полосной линии ($L_1 = \frac{d{L}}{d{x}}, C_1 = \frac{d{C}}{d{x}}$): &
+$V_{0}=\frac{1}{c} \sqrt{\frac{L_{1}}{C_{1}}} J_{0}$                       &
+Уравнение свободных колебаний:                                             &
+$\begin{aligned}
+ \frac{d J}{d t}+J R+\frac{q}{C}=0,\\
+\ddot{q}+2 \gamma \dot{q}+\omega_{0}^{2} q=0
+\end{aligned}$                                                             \\
+\hline
+Формула Томсона:                                                           &
+$T=\frac{2 \pi}{\omega_{0}}=2 \pi \sqrt{L C}$                              &
+                                                                           &
+                                                                           \\
+\hline
+Коэффициент затухания ($\gamma$):                                          &
+$A(t)=q_{0} e^{-\gamma t}$                                                 &
+                                                                           &
+                                                                           \\
+\hline
+Время затухания:                                                           &
+$\tau=1 / \gamma$                                                          &
+                                                                           &
+                                                                           \\
+\hline
+Логарифмический коэффициент затухания:                                     &
+$\delta=\gamma T=\frac{2 \pi \gamma}{\omega}$                              &
+                                                                           &
+                                                                           \\
+\hline
+Добротность:                                                               &
+$Q=\omega / 2 \gamma = \frac{1}{R} \sqrt{\frac{L}{C}}$                     &
+                                                                           &
+                                                                           \\
+\hline
+Добротность через энергию:                                                 &
+$Q=2 \pi \frac{W}{\Delta W}$                                               &
+                                                                           &
+                                                                           \\
+\hline
+Вынужденные колебания:                                                     &
+$\begin{aligned}
+L \ddot{q}+R \dot{q}+\frac{1}{C} q =                \\
+\mathcal{E}(t),                                     \\
+\quad \mathcal{E}(t)=\mathcal{E}_{0} \cos \omega t
+\end{aligned}$                                                             &
+                                                                           &
+                                                                           \\
+\hline
+АЧХ при вынужденных колебаниях:                                            &
+$V_{0}=\frac{\omega_{0}^{2}}{\sqrt{\left(\omega_{0}^{2}-\omega^{2}\right)^{2}+4 \gamma^{2} \omega^{2}}} \mathcal{E}_{0}$&
+                                                                           &
+                                                                           \\
+\hline
+$V_{st}$ - амплитуда при малых частотах:                                   &
+$\frac{V_{\max }}{V_{st}}=\frac{\omega_{0}}{2 \gamma}=Q$                   &
+                                                                           &
+                                                                           \\
+\hline
+Ширина резонансной кривой на уровне ($V = \frac{V_0}{\sqrt{2}}$):          &
+$\Delta \omega=\frac{\omega_{0}}{Q}$                                       &
+                                                                           &
+                                                                           \\
+\hline
+Импеданс конденсатора:                                                     &
+$Z_C = \frac{1}{i \omega C}$                                               &
+                                                                           &
+                                                                           \\
+\hline
+Импеданс катушки индуктивности:                                            &
+$Z_L = i \omega L$                                                         &
+                                                                           &
+                                                                           \\
+\hline
+Формула Эйлера:                                                            &
+$e^{i x}=\cos x+i \sin x$                                                  &
+                                                                           &
+                                                                           \\
+\hline
+Сложение импедансов:                                                       &
+Аналогично $R$ при постоянном токе.                                        &
+                                                                           &
+                                                                           \\
+\hline
+Закон Джоуля-Ленца:                                                        &
+$\bar{Q}=\overline{\mathcal{E} J}=\frac{1}{T} \int_{t}^{t+T} \mathcal{E}\left(t_{1}\right) \cdot J\left(t_{1}\right) d t$,
+$\bar{Q}=\mathcal{E}_{\mathrm{eff}} J_{\mathrm{eff}} \cos \varphi_{0}$     &
+                                                                           &
+                                                                           \\
+\hline
+Спектр амплитудно модулированных колебаний ($x(t)=A(t) \cos \omega_{0} t$, $A(t)=A_{0}(1+m \cos \Omega t)$):&
+$S(t)=A_{0} e^{i \omega_{0} t}+\frac{m A_{0}}{2} e^{i\left(\omega_{0}-\Omega\right) t}+\frac{m A_{0}}{2} e^{i\left(\omega_{0}+\Omega\right) t}$&
+                                                                           &
+                                                                           \\
+\hline
+Спектр фазово модулированных колебаний ($x(t)=A_{0} \cos \left(\omega_{0} t+\beta \sin \Omega t\right), \Omega \ll \omega$):&
+$S(t)=A_{0} e^{i \omega_{0} t}-\frac{\beta A_{0}}{2} e^{i\left(\omega_{0}-\Omega\right) t}+\frac{\beta A_{0}}{2} e^{i\left(\omega_{0}+\Omega\right) t}$&
+                                                                           &
+                                                                           \\
+\hline
+Ряд Фурье ($\omega_{k}=\frac{2 \pi k}{T}=k \omega, \omega=\frac{2 \pi}{T}$):&
+$f(t)=\sum_{k=-\infty}^{+\infty} C_{k} e^{i \omega_{k} t}$                 &
+                                                                           &
+                                                                           \\
+\hline
+Коэффициент в ряде Фурье:                                                  &
+$\begin{aligned}
+C_{k}=\frac{1}{T} \int_{0}^{T} f(t) \cdot  \\
+ e^{-i \omega_{k} t} d t,                  \\
+\omega_{k}=\frac{2 \pi k}{T}
+\end{aligned}$                                                             &
+                                                                           &
+                                                                           \\
+\hline
+Коэффициент в ряде Фурье (Ещё формула):                                    &
+$C_{k}=\frac{1}{T} \int_{t_{0}}^{t_{0}+T} f(t) e^{-i \omega_{k} t} d t$    &
+                                                                           &
+                                                                           \\
+\hline
+\end{tabular}
+
+\end{document}
