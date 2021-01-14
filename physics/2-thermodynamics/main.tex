@@ -1,0 +1,359 @@
+ 
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=0cm,right=0cm,top=0cm,bottom=0cm,bindingoffset=0cm]{geometry}
+\usepackage[russian]{babel}
+\usepackage{amssymb,amsmath}
+
+\begin{document}
+\begin{tabular}{ |p{4.5cm}|p{5cm}|p{4.5cm}|p{5cm}|  }
+\hline
+\multicolumn{4}{|c|}{Термодинамика.} \\
+\hline
+Уравнение состояния идеального газа.                                         &  % [1, 1]
+$PV = \nu RT.$                                                               &  % [1, 2]
+Канонические уравнения. $U$.                                                 &  % [1, 3]
+$U = U(S, V).$                                                               \\ % [1, 4]
+\hline
+Закон Дальтона                                                               &  % [2, 1]
+$P = P_1 + \dots + P_n$, где ${P_i}$ - парциальные давления газов.           &  % [2, 2]
+Канонические уравнения. $H$.                                                 &  % [2, 3]
+$H = H(S, P).$                                                               \\ % [2, 4]
+\hline
+Некоторые тождества.                                                         &  % [3, 1]
+$
+dV = 
+\left( \frac{\partial V}{\partial P} \right)_T dP +
+\left( \frac{\partial V}{\partial T} \right)_P dT;
+$
+$
+\left( \frac{\partial P}{\partial V} \right)_T +
+\left( \frac{\partial V}{\partial T} \right)_P +
+\left( \frac{\partial T}{\partial P} \right)_V = -1.
+$                                                                            &  % [3, 2]
+Канонические уравнения. $\Psi$.                                              &  % [3, 3]
+$\Psi = \Psi(T, V).$                                                         \\ % [3, 4]
+\hline
+Работа внешних сил.                                                          &  % [4, 1]
+$\delta A_\text{внеш} = -P_\text{внеш} dV.$                                  &  % [4, 2]
+Канонические уравнения. $\Phi$.                                              &  % [4, 3]
+$\Phi = \Phi(T, P).$                                                         \\ % [4, 4]
+\hline
+Закон сохранения энергии.                                                    &  % [5, 1]
+$Q = U_2 - U_1 + A_{12}$                                                     &  % [5, 2]
+Уравнения Гиббса-Гельмгольца. (I)                                            &  % [5, 3]
+$U = \Psi - T \left( \frac{\partial \Psi}{\partial T} \right)_V$             \\ % [5, 4]
+\hline
+Определение теплоёмкости.                                                    &  % [6, 1]
+$C = \frac{\delta Q}{dT}.$                                                   &  % [6, 2]
+Уравнения Гиббса-Гельмгольца. (II)                                           &  % [6, 3]
+$H = \Phi - T \left( \frac{\partial \Phi}{\partial T} \right)_P$             \\ % [6, 4]
+\hline
+Энтальпия.                                                                   &  % [7, 1]
+$H = U + PV.$                                                                &  % [7, 2]
+Промежуточные соотношения. (I)                                               &  % [7, 3]
+$
+T = \left( \frac{\partial U}{\partial S} \right)_V, 
+P = -\left( \frac{\partial U}{\partial V}\right)_S.
+$                                                                            \\ % [7, 4]
+\hline
+Уравнение Роберта-Майера.                                                    &  % [8, 1]
+$C_P - C_V = R.$                                                             &  % [8, 2]
+Промежуточные соотношения. (II)                                              &  % [8, 3]
+$
+T = \left( \frac{\partial H}{\partial S} \right)_P,
+V = \left( \frac{\partial H}{\partial P} \right)_S.
+$                                                                           \\ % [8, 4]
+\hline
+Уравнение Пуассона.                                                          &  % [9, 1]
+$PV^\gamma = const, \text{где} \: \gamma = \frac{C_P}{C_V}.$                 &  % [9, 2]
+Промежуточные соотношения. (III)                                             &  % [9, 3]
+$
+S = -\left( \frac{\partial \Psi}{\partial T} \right)_V,
+P = -\left( \frac{\partial \Psi}{\partial V} \right)_T.
+$                                                                             \\ % [9, 4]
+\hline
+Скорость звука в газе.                                                       &  % [10, 1]
+$c = \sqrt{\gamma \frac{P}{\rho}}$.                                          &  % [10, 2]
+Промежуточные соотношения. (IV)                                              &  % [10, 3]
+$
+S = -\left( \frac{\partial \Phi}{\partial T} \right)_V
+V = \left( \frac{\partial \Phi}{\partial P} \right)_T
+$                                                                            \\ % [10, 4]
+\hline
+Уравнение Бернулли.                                                          &  % [11, 1]
+$\varepsilon + \frac{P}{\rho} = const$,
+$\varepsilon$ - полная элергия единицы массы.                                &  % [11, 2]
+Соотношения Максвелла. (I)                                                   &  % [11, 3]
+$
+\left( \frac{\partial T}{\partial V} \right)_S =
+-\left( \frac{\partial P}{\partial S} \right)_V.
+$                                                                            \\ % [11, 4]
+\hline
+Уравнение Бернулли в другом виде.                                            &  % [12, 1]
+$
+u + \frac{P}{\rho} + gh + \frac{v^2}{2} = 
+i + gh + \frac{v^2}{2} = const, i
+$ - энтальпия единицы массы.                                                 &  % [12, 2]
+Соотношения Максвелла. (II)                                                  &  % [12, 3]
+$
+\left( \frac{\partial T}{\partial P} \right)_S = 
+\left( \frac{\partial V}{\partial S} \right)_P.
+$                                                                            \\ % [12, 4]
+\hline
+Скорость итечения идельного газа.                                            &  % [13, 1]
+$
+v_2 = \sqrt{\frac{2}{\mu} C_P T_1 
+\left[
+  1 - \left( \frac{P_2}{P_1} \right)^{\frac{\gamma - 1}{\gamma}} 
+\right]}
+$                                                                            &  % [13, 2]
+Соотношения Максвелла. (III)                                                 &  % [13, 3]
+$
+\left( \frac{\partial S}{\partial V} \right)_T =
+\left( \frac{\partial P}{\partial T} \right)_V.
+$                                                                           \\ % [13, 4]
+\hline
+КПД.                                                                         &  % [14, 1]
+$\eta = \frac{A}{Q_1} = \frac{Q_1 - Q_2}{Q_1}.$                              &  % [14, 2]
+Соотношения Максвелла. (IV)                                                  &  % [14, 3]
+$
+\left( \frac{\partial S}{\partial P} \right)_T = 
+\left( \frac{\partial V}{\partial T} \right)_P.
+$                                                                            \\ % [14, 4]
+\hline
+КПД тепловой машины, работающей по циклу Карно.                              &  % [15, 1]
+$\eta = \frac{A}{Q_1} = \frac{T_1 - T_2}{T_1}$                               &  % [15, 2]
+Химический потенциал.                                                        &  % [15, 3]
+$
+\mu^* = 
+\left( \frac{\partial U}{\partial N}    \right)_{V,S} = 
+\left( \frac{\partial \Psi}{\partial N} \right)_{T,V} =
+\left( \frac{\partial \Phi}{\partial N} \right)_{T,P} =
+\left( \frac{\partial H}{\partial N} \right)_{P, S}.
+$                                                                            \\ % [15, 4]
+\hline
+Вторая теорема Карно.                                                        &  % [16, 1]
+$\frac{Q_1 - Q_2}{Q_2} \leq \frac{T_1 - T_2}{T_1}$                           &  % [16, 2]
+Внутренняя энергия в случае изменения числа частиц.                          &  % [16, 3]
+$dU = TdS - PdV + \mu^* dN.$                                                 \\ % [16, 4]
+\hline
+Неравенство Клаузиуса:                                                       &  % [17, 1]
+$\oint \frac{\delta{Q}}{T} \leq 0, \text{где} \: Q$ -- подводимое тепло.     &  % [17, 2]
+Закон теплопроводности.                                                      &  % [17, 3]
+$j = - \kappa \frac{\partial T}{\partial x}.$                                    \\ % [17, 4]
+\hline
+Энтропия.                                                                    &  % [18, 1]
+$dS  = \left( \frac{\delta Q}{T} \right)_\text{квст}$                        &  % [18, 2]
+Уравнение теплопроводности.                                                  &  % [18, 3]
+$
+\rho c_v \frac{\partial T}{\partial t} = -
+\left( 
+  \frac{\partial j_x}{\partial x} + 
+  \frac{\partial j_y}{\partial y} +
+  \frac{\partial j_z}{\partial z}
+\right) +
+q
+$                                                                            \\ % [18, 4]
+\hline
+Энтропия идеального одного моля газа.                                        &  % [19, 1]
+$dS = \frac{\delta Q}{T} = C_V(T) \frac{dT}{T} + R \frac{dV}{V}$             &  % [19, 2]
+Уравнение теполопроводности в случае сферической симметрии.                  &  % [19, 3]
+$ 
+\rho c_v \frac{\partial T}{\partial t} = -
+\frac{1}{r^2} \frac{\partial}{\partial r} (r^2 j) + q = 
+\frac{1}{r^2} \frac{\partial}{\partial r} 
+\left( \kappa r^2 \frac{\partial T}{\partial r}  \right) + q.
+$                                                                            \\ % [19, 4]
+\hline
+Энтропия идеального одного моля газа.                                        &  % [20, 1]
+$S = C_V \ln T + R \ln V + const$                                            &  % [20, 2]
+Уравнение теплопроводности в случае циллиндрической симметрии.               &  % [20, 3]
+$
+\rho c_v \frac{\partial T}{\partial t} = -
+\frac{1}{r} \frac{\partial}{\partial r} (r j) + q = 
+\frac{1}{r} \frac{\partial}{\partial r} 
+\left( \kappa r \frac{\partial T}{\partial r}  \right) + q.
+$                                                                            \\ % [20, 4]
+\hline
+Связь энтрапии и энтальпии.                                                  &  % [21, 1]
+$dH = TdS + VdP.$                                                            &  % [21, 2]
+Стац. распр. температуры в бесконечной пластинке.                            &  % [21, 3]
+$T = \frac{T_2 - T_1}{l}x.$                                                  \\ % [21, 4]
+\hline
+Свободная энергия.                                                           &  % [22, 1]
+$\Psi = U - TS.$                                                             &  % [22, 2]
+Стац. распр. температуры между двумя конц. сферами.                          &  % [22, 3]
+$T = \frac{r_2T_2 - r_1T_1}{r_2-r_1} + \frac{r_1r_2(T_1 - T_2)}{r(r_2-r_1)}.$\\ % [22, 4]
+\hline
+Термодинамический потенциал (потенциал Гиббса).                              &  % [23, 1]
+$\Phi = \Psi + PV.$                                                          &  % [23, 2]
+Стац. распр. температуры между двумя конц. циллиндрами.                      &  % [23, 3]
+$T = 
+\frac{T_1 \ln r_2 - T_2 \ln r_1}{\ln r_2/r_1} + 
+\frac{T_2 - T_1}{\ln r_2/r_1} \ln r.$                                        \\ % [23, 4]
+\hline
+Выражение для дифференциала свободной энергии.                               &  % [24, 1]
+$d\Psi = -SdT - PdV.$                                                        &  % [24, 2]
+Связь давления и кинетической энергии поступательного движения молекул.      &  % [24, 3]
+$P = \frac{1}{3} nm \langle v^2 \rangle.$                                    \\ % [24, 4]
+\hline
+Выражение для дифференциала термодинамического потенциала.                   &  % [25, 1]
+$d\Phi = -SdT + VdP.$                                                        &  % [25, 2]
+Связь среднеквадратичной скорости молекул и скорости звука.                  &  % [25, 3]
+$\overline{v} = \sqrt{\langle v^2 \rangle} = c \sqrt\frac{3}{\gamma}$        \\ % [25, 4]
+\hline
+\end{tabular}
+
+\newpage
+
+\begin{tabular}{ |p{4.3cm}|p{5.2cm}|p{4.3cm}|p{5.2cm}|  }
+\hline
+\multicolumn{4}{|c|}{Термодинамика.} \\
+\hline
+Кинетическая энергия молекулы, приходящаяся на одну степень свободы.         &  % [1, 1]
+$\frac{1}{2}kT.$                                                             &  % [1, 2]
+Уравнение газа Ван-дер-Ваальса.                                              &  % [1, 3]
+$\left( P + \frac{a}{V^2} \right) (V - b) = RT.$                             \\ % [1, 4]
+\hline
+Формула Эйнштейна.                                                           &  % [2, 1]
+$\langle r^2 \rangle = r_0^2 + 6kTBt.$                                       &  % [2, 2]
+Уравнение газа Ван-дер-Ваальса (для произвольного количества).               &  % [2, 3]
+$\left( P + \frac{a \nu^2}{V^2} \right)( V - b \nu ) = \nu RT.$              \\ % [2, 4]
+\hline
+Молярная теплоёмкость одноатомного газа.                                     &  % [3, 1]
+$C_V = \frac{3}{2}R, \: C_P = \frac{5}{2}R.$                                 &  % [3, 2]
+Уравнение изотермы газа Ван-дер-Ваальса.                                     &  % [3, 3]
+$PV^3 - (RT + Pb)V^2 + aV - ab = 0.$                                         \\ % [3, 4]
+\hline
+Молярная теплоёмкость двухатомного газа.                                     &  % [4, 1]
+$C_V = \frac{5}{2}R, \: C_P = \frac{7}{2}R.$                                 &  % [4, 2]
+Критическая температура.                                                     &  % [4, 3]
+$T_k = \frac{8a}{27Rb}.$                                                     \\ % [4, 4]
+\hline
+Молярная теплоёмкость многоатомного газа.                                    &  % [5, 1]
+$C_V = 3R, \: C_P = 4R.$                                                     &  % [5, 2]
+Приведённые параматры для уравнения Ван-дер-Ваальса.                         &  % [5, 3]
+$\varphi = \frac{V}{V_k}, \pi = \frac{P}{P_k}, \tau = \frac{T}{T_k}.$        \\ % [5, 4]
+\hline
+Молярная теплоёмкость твёрдого тела с кристаллической решёткой.              &  % [6, 1]
+$C_V = 3R.$                                                                  &  % [6, 2]
+Приведённое уравнение Ван-дер-Ваальса.                                       &  % [6, 3]
+$
+\left( \pi + \frac{3}{\phi^2} \right)\left( \varphi - \frac{1}{3} \right) = 
+\frac{8}{3} \tau.
+$                                                                            \\ % [6, 4]
+\hline
+Плотность вероятности распределения скоростей. (I)                           &  % [7, 1]
+$
+\varphi(v_x) = \sqrt{\frac{m}{2\pi k T}} 
+\exp \left( -\frac{mv_x^2}{2kT} \right).
+$                                                                            &  % [7, 2]
+Внутренняя энергия газа Ван-дер-Ваальса (в случае постоянности теплоёмкости).&  % [7, 3]
+$U = C_VT - \frac{a}{V}.$                                                    \\ % [7, 4]
+\hline
+Плотность вероятности распределения скоростей. (I)                           &  % [8, 1]
+$
+f(v) = \sqrt{\frac{m}{2\pi k T}}^3 
+\exp \left( -\frac{mv^2}{2kT} \right).
+$                                                                            &  % [8, 2]
+Внутренняя энергия газа Ван-дер-Ваальса.                                     &  % [8, 3]
+$U = \int C_V(T) dT - \frac{a}{V}.$                                          \\ % [8, 4]
+\hline
+Плотность вероятности абсолютного значения скоростей.                        &  % [9, 1]
+$
+F(v) = 
+4 \pi \left( \frac{m}{2\pi kT} \right)^\frac{3}{2} v^2 
+\exp \left( -\frac{\varepsilon}{kT} \right).
+$                                                                            &  % [9, 2]
+Формула Лапласа.                                                             &  % [9, 3]
+$\Delta P = \sigma \left( \frac{1}{R_1} + \frac{1}{R_2} \right).$            \\ % [9, 4]
+\hline
+Среднее значение абсолютного значения скорости (математическое ожидание).    &  % [10, 1]
+$\langle v \rangle = \sqrt{\frac{8kT}{\pi m}} = v_m \sqrt{\frac{4}{\pi}}.$   &  % [10, 2]
+Уравнение Клайперона-Клаузиуса.                                              &  % [10, 3]
+$\frac{dP}{dT} = \frac{q}{T(v_1 - v_2)}.$                                    \\ % [10, 4]
+\hline
+Среднее значение числа молекул, сталкивающихся с стенкой.                    &  % [11, 1]
+$\frac{1}{4} n \langle v \rangle = n \sqrt{\frac{kT}{2 \pi m}}.$             &  % [11, 2]
+Зависимость давления насыщенного газа от температуры.                        &  % [11, 3]
+$P = P_0 \exp \frac{\mu q}{R} \left( \frac{1}{T_0} - \frac{1}{T} \right).$   \\ % [11, 4]
+\hline
+Распределение Больцмана.                                                     &  % [12, 1]
+$
+n = n_0 \exp \left( -\frac{\varepsilon_p}{kT} \right), 
+\text{где} \:\: \varepsilon_p$ -- потенциальная энергия молекулы.            &  % [12, 2]
+                                                                             &  % [12, 3]
+                                                                             \\ % [12, 4]
+\hline
+Распределение Больцмана.                                                     &  % [13, 1]
+$P = P_0 \exp \left( -\frac{\mu g z}{RT} \right).$                           &  % [13, 2]
+                                                                             &  % [13, 3]
+                                                                             \\ % [13, 4]
+\hline
+Относительная среднеквадратичная флуктуация.                                 &  % [14, 1]
+$\delta_f = \frac{\sqrt{\overline{(\Delta f)^2}}}{\overline f}.$             &  % [14, 2]
+                                                                             &  % [14, 3]
+                                                                             \\ % [14, 4]
+\hline
+Флуктуации числа частиц идеального газа в выделенном объеме.                 &  % [15, 1]
+$\overline{(\Delta n)^2}, \: \delta_n = \frac{1}{\sqrt{\overline{n}}}.$      &  % [15, 2]
+                                                                             &  % [15, 3]
+                                                                             \\ % [15, 4]
+\hline
+Флуктуации температуры в заданном объёме.                                    &  % [16, 1]
+$\overline{(\Delta T)^2_V} = \frac{kT^2}{C_V}.$                              &  % [16, 2]
+                                                                             &  % [16, 3]
+                                                                             \\ % [16, 4]
+\hline
+Определение $D$.                                                             &  % [17, 1]
+$j_x = -D \frac{\partial n}{\partial x}.$                                    &  % [17, 2]
+                                                                             &  % [17, 3]
+                                                                             \\ % [17, 4]
+\hline
+Определение подвижности.                                                     &  % [18, 1]
+$\vec{F} = \frac{\vec{v}}{B}.$                                               &  % [18, 2]
+                                                                             &  % [18, 3]
+                                                                             \\ % [18, 4]
+\hline
+Соотношение Эйнштейна.                                                       &  % [19, 1]
+$D = kTB,  \text{где} B$ -- подвижность.                                     &  % [19, 2]
+                                                                             &  % [19, 3]
+                                                                             \\ % [19, 4]
+\hline
+Средняя длина свободного пробега.                                            &  % [20, 1]
+$\lambda = \frac{1}{n\sigma \sqrt{2}}.$                                      &  % [20, 2]
+                                                                             &  % [20, 3]
+                                                                             \\ % [20, 4]
+\hline
+Эффективное сечение.                                                         &  % [21, 1]
+$\sigma = \pi (r_1 + r_2)^2.$                                                &  % [21, 2]
+                                                                             &  % [21, 3]
+                                                                             \\ % [21, 4]
+\hline
+Эффективное сечение через частоту столкновений с частицей-мишенью.           &  % [22, 1]
+$\sigma = \frac{\Delta N}{nv}, \text{где} \: \Delta N$ -- число столкновений 
+с частицей-мишенью за единицу времени.                                       &  % [22, 2]
+                                                                             &  % [22, 3]
+                                                                             \\ % [22, 4]
+\hline
+Эффективное сечение в зависимоти от температуры.                             &  % [23, 1]
+$\sigma = \sigma_0 \left( 1 + \frac{S}{T} \right).$                         &  % [23, 2]
+                                                                             &  % [23, 3]
+                                                                             \\ % [23, 4]
+\hline
+Ослабление интенсивности почка в газе.                                       &  % [24, 1]
+$J = J_0 e^{-x/\lambda}, \text{где} \: \lambda$ -- длина свободного пробега. &  % [24, 2]
+                                                                             &  % [24, 3]
+                                                                             \\ % [24, 4]
+\hline
+Ньютоновский закон вязкости.                                                 &  % [25, 1]
+$\tau_{xy} = \eta \frac{du}{dx}, \: \eta = \frac{1}{3}nmv\lambda.$           &  % [25, 2]
+                                                                             &  % [25, 3]
+                                                                             \\ % [25, 4]
+\hline
+\end{tabular}
+
+\end{document}

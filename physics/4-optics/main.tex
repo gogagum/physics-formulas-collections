@@ -17,7 +17,8 @@ $\begin{aligned}
 \vec{H} = k^2 (\vec{n} \times \vec{p_0}) \frac{e^{i(kr - \omega t)}}{r}, \\
 \vec{E} = \vec{H} \times \vec{n}, k = \frac{\omega}{c},
 \vec{n} = \frac{\vec{r}}{r}
-\end{aligned}$                                                               \\ % [1, 4]
+\end{aligned}$                 
+\vspace{5pt}                                                                 \\ % [1, 4]
 \hline
 Закон отражения:                                                             &  % [2, 1]
 Угол падения равен углу отражения.                                           &  % [2, 2]
@@ -30,18 +31,19 @@ $\frac{1}{F} = \frac{1}{f} + \frac{1}{d}$                                    &  
 $n_0 = n(0) = \sqrt{1 + \frac{\omega_p^2}{\omega_0^2}}$                      \\ % [3, 4]
 \hline
 Фокусное расстояние через радиусы кривизны:                                  &  % [4, 1]
-$\frac{1}{F} = (n-1)(\frac{1}{R_1} + \frac{1}{R_2})$ (<<->> перед
-$\frac{1}{R_i}$, если соответствующая поверхность вогнутая)                  &  % [4, 2]
+$\frac{1}{F} = (n-1)\left(\frac{1}{R_1} + \frac{1}{R_2}\right)$ (<<->> перед
+$\frac{1}{R_i}$, если соответствующая поверхность вогнутая.)                 &  % [4, 2]
 Закон Бугера:                                                                &  % [4, 3]
 $\begin{aligned}
 k = \frac{\omega \sqrt{\varepsilon}}{c} =
  \frac{\omega}{c}n + i \frac{\omega}{c} \kappa =    \\
  k_r + i \frac{\alpha}{2},
 I = I_0 e^{-\alpha x}
-\end{aligned}$                                                                             \\ % [4, 4]
+\end{aligned}$                                                               \\ % [4, 4]
 \hline
 Фокусное расстояние двух линз:                                               &  % [5, 1]
-$\frac{1}{F} = \frac{1}{F_1} + \frac{1}{F_2} - \frac{1}{F_1 F_2}$            &  % [5, 2]
+$\frac{1}{F} = \frac{1}{F_1} + \frac{1}{F_2} - \frac{d}{F_1 F_2}$,
+где $d$ -- расстояние между линзами.                                         &  % [5, 2]
 Диэлектрическая проницаемость плазмы:                                        &  % [5, 3]
 $\varepsilon = 1 - (\frac{\omega_p}{\omega})^2 =
  1 - \frac{4 \pi N e^2}{m \omega^2}$                                         \\ % [5, 4]
@@ -53,7 +55,7 @@ $\frac{1}{v^2} \frac{\partial^2 \vec{E}}{\partial t^2} - \Delta \vec{E} = 0,
 $v_{gr} = \frac{d \omega}{d k}$                                                 \\ % [6, 4]
 \hline
 Скорость света в среде:                                                      &  % [7, 1]
-$v = \frac{c}{n} = \frac{c}{\sqrt{\epsilon\mu}}$                             &  % [7, 2]
+$v = \frac{c}{n} = \frac{c}{\sqrt{\varepsilon\mu}}$                          &  % [7, 2]
 Интенсивность суммы двух волн:                                               &  % [7, 3]
 $I = I_1 + I_2 + 2 \sqrt{I_1 I_2} cos [\Delta \varphi(r)]$                                       \\ % [7, 4]
 \hline
@@ -123,7 +125,7 @@ $x_{min} = \frac{\lambda L}{d} (m + \frac{1}{2})$                               
 \hline
 Сходящаяся сферическая волна:                                                &  % [18, 1]
 $A = A_0 \frac{e^{-i k r-i \omega t}}{r}$                                    &  % [18, 2]
-Функция когерентности:                                                       &  % [18, 3]
+Функция временной когерентности:                                             &  % [18, 3]
 $\begin{aligned}
 \overline{A^2(t)} = \overline{A^2(t+\tau)} = I_0, \\
 \overline{A^2(t) A^2(t+\tau)} = \Gamma(\tau),     \\
@@ -158,7 +160,7 @@ $V = |\gamma(\tau)|$                                                         &  
 \hline
 Функция временной когерентности:                                             &  % [4, 1]
 $\Gamma(\tau) = \frac{1}{\Delta \tau}
- \int_0^{\Delta t} A(t_1) A(t_1 + \tau) dt$                                         &  % [4, 2]
+ \int_0^{\Delta \tau} A(t_1) A(t_1 + \tau) dt$                               &  % [4, 2]
                                                                              &  % [4, 3]
                                                                              \\ % [4, 4]
 \hline
@@ -173,48 +175,58 @@ I = 2 \int_0^\infty J(\omega)(1 + \cos(\omega \tau)) d\omega,    \\
 \hline
 Теорема Винера-Хинчина (комплексная форма):                                  &  % [6, 1]
 $\hat{\Gamma}(\tau) =
- \int_{-\infty}^{\infty} J(\omega) e^{i \omega \tau} d\omega$                &  % [6, 2]
+ \int_{0}^{\infty} J(\omega) e^{i \omega \tau} d\omega$                      &  % [6, 2]
                                                                              &  % [6, 3]
                                                                              \\ % [6, 4]
 \hline
 Радиус $m$-ой зоны Френеля:                                                  &  % [7, 1]
-$R_m = \sqrt{m \lambda f}$                                                   &  % [7, 2]
+$R_m = \sqrt{m \lambda f}$, где $f$ - расстояние от отверстия до экрана.     &  % [7, 2]
                                                                              &  % [7, 3]
                                                                              \\ % [7, 4]
 \hline
 П-дь $m$-ой зоны Френеля:                                                    &  % [8, 1]
-$S_m = \pi \lambda f$                                                        &  % [8, 2]
+$S_m = \pi m \lambda f$                                                      &  % [8, 2]
                                                                              &  % [8, 3]
                                                                              \\ % [8, 4]
 \hline
-Разность хода от двух соседних щелей в дифракционной решетке:                &  % [9, 1]
-$\Delta = d \sin \Theta$                                                     &  % [9, 2]
+Разность хода от двух соседних щелей в дифракционной решетке и
+ условие (главных) максимумов:                                               &  % [9, 1]
+$\begin{aligned}
+\Delta = d \sin \Theta, \\
+d \sin \Theta = m \lambda, \\
+d(\sin{\Theta}-\sin{\Theta_0}) = m \lambda.
+\end{aligned}$                                                               &  % [9, 2]
                                                                              &  % [9, 3]
                                                                              \\ % [9, 4]
 \hline
-Условие максимумов для решетки:                                              &  % [10, 1]
-$d \sin \Theta = m \lambda$                                                  &  % [10, 2]
+Распределение интенсивности излучения при дифракции Фраунгофера на щели:     &  % [10, 1]
+$I = I_0 \frac{sin^2(\frac{N}{2} kd \cdot sin(\Theta))}
+              {sin^2(\frac{1}{2} kd \cdot sin(\Theta))}$                     &  % [10, 2]
                                                                              &  % [10, 3]
                                                                              \\ % [10, 4]
 \hline
-Распределение интенсивности излучения при дифракции Фраунгофера:             &  % [11, 1]
-$I = I_0 \frac{sin^2(\frac{N}{2} kd \cdot sin(\Theta))}
-              {sin^2(\frac{1}{2} kd \cdot sin(\Theta))}$                                             &  % [11, 2]
+Распределение интенсивности излучения при дифракции Фраунгофера
+ на круглом отверстии:                                                       &  % [11, 1]
+$\begin{aligned}
+I = I_0 \left(\frac{\pi R^2}{\lambda z}\right)^2
+\left(\frac{2 J_1(qR)}{qR}\right)^2,              \\
+q = k \sin{\Theta}
+\end{aligned}$                                                               &  % [11, 2]
                                                                              &  % [11, 3]
                                                                              \\ % [11, 4]
 \hline
-Соотношения для направлений на главные максимумы при дифракции на решетке:   &  % [12, 1]
-$d(\sin{\Theta}-\sin{\Theta_0}) = m \lambda$                                 &  % [12, 2]
+Интенсивность излучения в главных максимумах (дифракционная решётка):        &  % [12, 1]
+$I = N^2 I_0$                                                                &  % [12, 2]
                                                                              &  % [12, 3]
                                                                              \\ % [12, 4]
 \hline
-Интенсивность излучения в главных максимумах:                                &  % [13, 1]
-$I = N^2 I_0$                                                                &  % [13, 2]
+Угол первого минимума при дифракции на решетке:                              &  % [13, 1]
+$L \sin{\Theta} = \lambda$                                                   &  % [13, 2]
                                                                              &  % [13, 3]
                                                                              \\ % [13, 4]
 \hline
 Угловая ширина главного максимума:                                           &  % [14, 1]
-$\Delta \Theta = \frac{2 \lambda}{Nd}$                                                   &  % [14, 2]
+$\Delta \Theta = \frac{2 \lambda}{Nd}$                                       &  % [14, 2]
                                                                              &  % [14, 3]
                                                                              \\ % [14, 4]
 \hline
@@ -232,8 +244,8 @@ $I=I_{0} \frac{\sin ^{2}\left(\frac{1}{2} k b \sin \theta\right)}
                                                                              &  % [16, 3]
                                                                              \\ % [16, 4]
 \hline
-                                                                             &  % [17, 1]
-                                                                             &  % [17, 2]
+Критерий Рэлея:                                                              &  % [17, 1]
+$\Theta > 1,22 \frac{\lambda}{D}, l > 1,22 \frac{\lambda}{D} L$              &  % [17, 2]
                                                                              &  % [17, 3]
                                                                              \\ % [17, 4]
 \hline
