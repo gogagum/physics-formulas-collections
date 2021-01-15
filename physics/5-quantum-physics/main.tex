@@ -1,0 +1,194 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=0cm,right=0cm,top=0cm,bottom=0cm,bindingoffset=0cm]{geometry}
+\usepackage[russian]{babel}
+\usepackage{amssymb,amsmath}
+
+\begin{document}
+\begin{tabular}{ |p{5cm}|p{4.5cm}|p{5cm}|p{4.5cm}|  }
+\hline
+\multicolumn{4}{|c|}{Квантовая физика.} \\
+\hline
+Уравнение Эйнштейна.                                                         &  % [1, 1]
+$T_{max} = \hbar \omega - W$ -- максимальная энергия вылетающего электрона.  &  % [1, 2]
+Оператор проекции момента импульса на ось $z$.                               &  % [1, 3]
+$
+\hat{l}_z = (\hat{x}\hat{p}_y - \hat{y}\hat{p}_x) = i \hbar 
+\left( 
+  y\frac{\partial}{\partial x} - y \frac{\partial}{\partial y} 
+\right).
+$                                                                            \\ % [1, 4]
+\hline
+Формула Планка.                                                              &  % [2, 1]
+$
+\rho(\omega) = 
+\frac{\hbar \omega^3}{\pi^2 c^3 \left[ \exp \hbar\omega/kT - 1 \right]}
+$                                                                            &  % [2, 2]
+Правила коммутации операторов проекций импульса.                             &  % [2, 3]
+$\hat{l}_y \hat{l}_z - \hat{l}_z \hat{l}_y = i \hbar \hat{l}_x,$ \newline
+$\hat{l}_z \hat{l}_x - \hat{l}_x \hat{l}_z = i \hbar \hat{l}_y,$ \newline
+$\hat{l}_x \hat{l}_y - \hat{l}_y \hat{l}_x = i \hbar \hat{l}_z.$             \\ % [2, 4]
+\hline
+Закон Стефана-Больцмана.                                                     &  % [3, 1]
+$\rho(T) = \frac{\pi^2 k^4}{15 c^3 \hbar^3}T^4 = \sigma T^4.$                &  % [3, 2]
+Оператор момента импульса через операторы проекций.                          &  % [3, 3]
+$\vec{\hat{I}} = \vec{i} \hat{l}_x + \vec{j} \hat{l}_y + \vec{k} \hat{l}_z.$ \\ % [3, 4]
+\hline
+Закон смещения Вина.                                                         &  % [4, 1]
+$arg\max \rho(\omega) = 2.8 \frac{kT}{\hbar}.$                               &  % [4, 2]
+Сложение угловых моментов.                                                   &  % [4, 3]
+$\hat{I} = \hat{I}_1 + \hat{I}_2.$                                           \\ % [4, 4]
+\hline
+Волна де Бройля.                                                             &  % [5, 1]
+$\psi(\vec{r}, t) = Ce^{\frac{i}{\hbar} (\vec{p} \vec{r} - Et)}.$            &  % [5, 2]
+Сложение проекций углового момента.                                          &  % [5, 3]
+$\hat{l}_x = \hat{l}_{1x} + \hat{l}_{2x}.$                                   \\ % [5, 4]
+\hline
+Длина волны де Бройля.                                                       &  % [6, 1]
+$\lambda_{\text{дБ}} = \frac{h}{p}.$                                         &  % [6, 2]
+Обозначение состояний, соответствующих различным орбитальным квантовым 
+числам $l$.                                                                  &  % [6, 3]
+$0-s, 1-p, 2-d, 3-f, \newline 4-g, 5-h, 6-i, 7-k.$                           \\ % [6, 4]
+\hline
+Волновая функция.                                                            &  % [7, 1]
+$
+\psi(\vec{r}, t) = Ce^{i(\vec{k}\vec{r} - \omega t)}
+= Ce^{\frac{i}{h}(\vec{p}\vec{r} - E t)}.
+$                                                                            &  % [7, 2]
+Одномерное стационарное уравнение Шрёдингера.                                &  % [7, 3]
+$-\frac{\hbar^2}{2m} \frac{d^2 \psi (x)}{dx^2} + U(x)\psi(x) = E\psi(x).$    \\ % [7, 4]
+\hline
+Плотность вероятности нахождения частицы в пространстве.                     &  % [8, 1]
+$dW(\vec{r}, t) = |\psi|^2 dV.$                                              &  % [8, 2]
+Эффективнаяя потенциальная энергия радиального движения электрона.           &  % [8, 3]
+$
+U_\text{эф} = U(r) + \frac{L^2}{2mr^2} = U(r) + \frac{\hbar^2 l(l+1)}{2mr^2}.
+$                                                                            \\ % [8, 4]
+\hline
+Разложение волновой функции в ряд Фурье.                                     &  % [9, 1]
+$
+\psi(x) = \frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{+\infty} f(k) e^{ikx} dk,
+$
+$
+f(k) = \frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{+\infty} \psi(x) e^{ikx} dx.
+$                                                                            &  % [9, 2]
+Магнитный момент точечного заряда.                                           &  % [9, 3]
+$
+\vec{\pmb{m}} = \frac{q}{2c} \left[ \vec{r}, \vec{v} \right] = 
+\frac{q}{2\mu c} \left[ \vec{r}, \vec{p} \right] = 
+\Gamma \vec{I}.
+$                                                                            \\ % [9, 4]
+\hline
+Вероятность нахождения волнового числа в интервале 
+$\left[ k, k + dk \right]$ или импульса в 
+$\left[ \hbar k, \hbar(k + dk) \right]$.                                     &  % [10, 1]
+$W = |f(k)|^2 dk.$                                                           &  % [10, 2]
+Гиромагнитное отношение.                                                     &  % [10, 3]
+$\Gamma = - \frac{e}{2\mu c}.$                                               \\ % [10, 4]
+\hline
+Средняя координата.                                                          &  % [11, 1]
+$
+\langle x \rangle = 
+\int_{-\infty}^{+\infty} x |\psi(x)|^2 dx = 
+\int_{-\infty}^{+\infty} \psi^*(x) x \psi(x) dx.
+$                                                                            &  % [11, 2]
+Оператор магнитного момента.                                                 &  % [11, 3]
+$\vec{\hat{\pmb{m}}} = \Gamma \vec{\hat{L}}.$                                \\ % [11, 4]
+\hline
+Оператор координаты.                                                         &  % [12, 1]
+$\hat{x} = x.$                                                               &  % [12, 2]
+                                                                             &  % [12, 3]
+                                                                             \\ % [12, 4]
+\hline
+Оператор импульса.                                                           &  % [13, 1]
+$\hat{p}(\vec{r}) = -i\hbar \triangledown.$                                  &  % [13, 2]
+                                                                             &  % [13, 3]
+                                                                             \\ % [13, 4]
+\hline
+Соотношение неопределённостей Гейзенберга.                                   &  % [14, 1]
+$\Delta x \Delta p \geq \hbar.$                                              &  % [14, 2]
+                                                                             &  % [14, 3]
+                                                                             \\ % [14, 4]
+\hline
+Уравнение Шредингера.                                                        &  % [15, 1]
+$i \hbar \frac{\partial \psi}{\partial t} = \hat{H} \psi.$                   &  % [15, 2]
+                                                                             &  % [15, 3]
+                                                                             \\ % [15, 4]
+\hline
+Стационарное уравнение Шредингера.                                           &  % [16, 1]
+$\frac{\partial^2 \psi}{\partial x^2} = -k_x^2 \psi.$                        &  % [16, 2]
+                                                                             &  % [16, 3]
+                                                                             \\ % [16, 4]
+\hline
+Оператор полной энергии частицы.                                             &  % [17, 1]
+$
+\hat{H} = \hat{T} + \hat{U} = 
+U(x, y, z) - \frac{\hbar^2}{2m} 
+\left( 
+  \frac{\partial^2 x}{\partial x^2} +
+  \frac{\partial^2 y}{\partial y^2} +
+  \frac{\partial^2 z}{\partial z^2}
+\right).
+$                                                                            &  % [17, 2]
+                                                                             &  % [17, 3]
+                                                                             \\ % [17, 4]
+\hline
+Радиус $n$-ой Боровской орбиты.                                              &  % [18, 1]
+$r_n = \frac{\hbar^2}{mZe^2}n^2,$                                            &  % [18, 2]
+                                                                             &  % [18, 3]
+                                                                             \\ % [18, 4]
+\hline
+Полная энергия электрона на $n$-той орбите.                                  &  % [19, 1]
+$E_n = -\frac{Z^2 m e^4}{2\hbar^2}\frac{1}{n^2}.$                            &  % [19, 2]
+                                                                             &  % [19, 3]
+                                                                             \\ % [19, 4]
+\hline
+Длина волны, излучаемая при преходе электрона между двумя уровнями.          &  % [20, 1]
+$
+\frac{1}{\lambda_{nm}} = 
+RZ^2 \left( \frac{1}{m^2} - \frac{1}{n^2} \right).
+$                                                                            &  % [20, 2]
+                                                                             &  % [20, 3]
+                                                                             \\ % [20, 4]
+\hline
+Постоянная Ридберга.                                                         &  % [21, 1]
+$R = \frac{2 \pi^2 m e^4}{ch^3}.$                                            &  % [21, 2]
+                                                                             &  % [21, 3]
+                                                                             \\ % [21, 4]
+\hline
+Закон Мюзли.                                                                 &  % [22, 1]
+$\sqrt{\nu} = A(Z-\sigma).$                                                  &  % [22, 2]
+                                                                             &  % [22, 3]
+                                                                             \\ % [22, 4]
+\hline
+Энергетические уровни ротатора.                                              &  % [23, 1]
+$E_r = \frac{\hbar^2}{2I} l(l+1).$                                           &  % [23, 2]
+                                                                             &  % [23, 3]
+                                                                             \\ % [23, 4]
+\hline
+Опреатор проекции момента импульса на ось $x$.                               &  % [24, 1]
+$
+\hat{l}_x = (\hat{y}\hat{p}_z - \hat{z}\hat{p}_y) = i \hbar 
+\left( 
+  z\frac{\partial}{\partial y} - y \frac{\partial}{\partial z} 
+\right).
+$                                                                            &  % [24, 2]
+                                                                             &  % [24, 3]
+                                                                             \\ % [24, 4]
+\hline
+Опреатор проекции момента импульса на ось $y$.                               &  % [25, 1]
+$
+\hat{l}_y = (\hat{z}\hat{p}_x - \hat{x}\hat{p}_z) = i \hbar 
+\left( 
+  x\frac{\partial}{\partial z} - z \frac{\partial}{\partial x} 
+\right).
+$                                                                            &  % [25, 2]
+                                                                             &  % [25, 3]
+                                                                             \\ % [25, 4]
+\hline
+\end{tabular}
+
+\newpage
+
+\end{document}
